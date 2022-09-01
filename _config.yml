@@ -1,0 +1,12 @@
+
+# activate the following plugins
+plugins:
+  - autoprefixer-rails #needed for bootstrap sass compiling 
+  - jekyll-assets #image management https://github.com/envygeeks/jekyll-assets
+
+#The jekyll-autoprefixer plugin can then be configured under the autoprefixer keyword
+autoprefixer:
+  #configure prefixes to support the last four versions of each browser
+  browsers:
+    - "last 4 versions"
+

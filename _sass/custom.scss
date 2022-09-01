@@ -1,0 +1,16 @@
+$custom-color: #6406b1;
+
+.gradient-text {
+  background: linear-gradient(to right top, #01847f, #007c8a, #007293, #006697, #005995, #004e8b, #014381, #043877, #052e67);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-background {
+  background: linear-gradient(to right top, #01847f, #007c8a, #007293, #006697, #005995, #004e8b, #014381, #043877, #052e67);
+}
+
+.gradient-background-light {
+  background: linear-gradient(to right bottom, #f0e7e3, #c9e9ff);
+}
