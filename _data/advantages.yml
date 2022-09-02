@@ -1,0 +1,12 @@
+- name: Test More
+  icon: bi-file-bar-graph
+  description: Experiment at scale of 96,384, and larger. Every day.
+- name: Save time
+  icon: bi-fast-forward-circle
+  description: More shots on goal gets you results faster.
+- name: Save Money
+  icon: bi-piggy-bank
+  description: Access equipment and experts, without having to find your own.
+- name: Support for commercialization
+  icon: bi-people
+  description: 1:1 coaching with businesses and biotech experts.
