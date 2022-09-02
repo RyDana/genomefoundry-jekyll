@@ -15,7 +15,7 @@
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="{{ item[1].link }}"
                                 role="button" aria-expanded="false">{{ item[1].name }}</a>
                             <ul class="dropdown-menu">
-                                {% for subitem in item.submenu %}
+                                {% for subitem in item[1].submenu %}
                                 <li><a class="dropdown-item" href="{{ subitem[1].link }}">{{ subitem[1].name }}</a></li>
                                 {% endfor %}
                             </ul>
