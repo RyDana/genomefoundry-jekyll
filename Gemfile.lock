@@ -14,6 +14,7 @@ GEM
     execjs (2.8.1)
     fastimage (1.8.1)
       addressable (~> 2.3, >= 2.3.5)
+    ffi (1.15.5)
     ffi (1.15.5-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
     hike (1.2.3)
@@ -93,6 +94,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   autoprefixer-rails (~> 10.4)
