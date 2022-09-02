@@ -28,10 +28,12 @@
                     
                 
                     
-                        <li class="nav-item">
-                        
-                            <a class="nav-link" href="#scrollspyServices">Services</a>
-                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#scrollspyServices"
+                                role="button" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                
+                            </ul>
                         </li>
                     
                 
@@ -66,6 +68,8 @@
   <main>
     <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
         class="scrollspy bg-light" tabindex="0">
+
+        <!-- HERO SECTION -->
         <header class="masthead" style="padding-top: 9.5rem; padding-bottom: 9.5rem;">
     <div class="container">
         <div class="row align-items-center">
@@ -119,6 +123,83 @@
         </div>
     </div>
 </header>
+
+        <!-- ABOUT SECTION -->
+        <!-- Captures the about content -->
+        
+        <!-- Captures the scrollspy data for the about section. I think it's still iffy. -->
+        
+        <!-- Sends the 'about content' and the 'about scrollspy data' into the default section wrapper -->
+        <section id="" class="py-4">
+    <div class="container-lg">
+    
+            <section id="scrollspyAbout" class="py-4">
+    <div class="container-lg pt-3">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 order-lg-1">
+            <!-- 
+big section heading
+
+a heading to use once per section, describing the purpose of the section
+includes a flag item (optional), heading (required) and subheading (required)
+be careful, heading and subheading are sensitive to line breaks -->
+
+
+    <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">About Us
+    </h2>
+
+<p class="display-3 mb-4">The Concordia Genome Foundry is Canada’s platform for synthetic biology.</p>
+<p class="lead fw-normal text-muted mb-5 col-sm-6">We use lab automation to provide academics and companies with services to engineer biology at a scale beyond manual methods.</p>
+            </div>
+            <div class="col-lg-6 order-lg-2 text-center align-self-center">
+                <div class="row mb-3">
+                    
+                        <div class="col-6 p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-file-bar-graph display-3 gradient-text"></i>
+                            </div>
+                            <h3>Test More</h3>
+                            <p class="lead fw-normal text-muted">Experiment at scale of 96,384, and larger. Every day.
+                            </p>
+                        </div>
+                    
+                        <div class="col-6 p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-fast-forward-circle display-3 gradient-text"></i>
+                            </div>
+                            <h3>Save time</h3>
+                            <p class="lead fw-normal text-muted">More shots on goal gets you results faster.
+                            </p>
+                        </div>
+                    
+                        <div class="col-6 p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-piggy-bank display-3 gradient-text"></i>
+                            </div>
+                            <h3>Save Money</h3>
+                            <p class="lead fw-normal text-muted">Access equipment and experts, without having to find your own.
+                            </p>
+                        </div>
+                    
+                        <div class="col-6 p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-people display-3 gradient-text"></i>
+                            </div>
+                            <h3>Support for commercialization</h3>
+                            <p class="lead fw-normal text-muted">1:1 coaching with businesses and biotech experts.
+                            </p>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+    </div>
+</section>
+
+        
         <section id="scrollspyAboutC" class="py-4 collapse">
             <div class="container-lg">
                 <div class="row">
@@ -238,64 +319,7 @@
                 </div>
             </div>
         </section>
-        <section id="scrollspyAbout" class="py-4">
-    <div class="container-lg pt-3">
-        <div class="row justify-content-between">
-            <div class="col-lg-6 order-lg-1">
-                <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">About Us
-                </h2>
-                <p class="display-3 mb-4">The Concordia Genome Foundry is Canada’s platform for synthetic
-                    biology.
-                </p>
-                <p class="lead fw-normal text-muted mb-5 col-sm-6">
-                    We use lab automation to provide academics and
-                    companies with services to engineer biology at a scale beyond manual methods.
-                </p>
-            </div>
-            <div class="col-lg-6 order-lg-2 text-center align-self-center">
-                <div class="row mb-3">
-                    
-                        <div class="col-6 p-4">
-                            <div class="mb-3">
-                                <i class="bi bi-file-bar-graph display-3 gradient-text"></i>
-                            </div>
-                            <h3>Test More</h3>
-                            <p class="lead fw-normal text-muted">Experiment at scale of 96,384, and larger. Every day.
-                            </p>
-                        </div>
-                    
-                        <div class="col-6 p-4">
-                            <div class="mb-3">
-                                <i class="bi bi-fast-forward-circle display-3 gradient-text"></i>
-                            </div>
-                            <h3>Save time</h3>
-                            <p class="lead fw-normal text-muted">More shots on goal gets you results faster.
-                            </p>
-                        </div>
-                    
-                        <div class="col-6 p-4">
-                            <div class="mb-3">
-                                <i class="bi bi-piggy-bank display-3 gradient-text"></i>
-                            </div>
-                            <h3>Save Money</h3>
-                            <p class="lead fw-normal text-muted">Access equipment and experts, without having to find your own.
-                            </p>
-                        </div>
-                    
-                        <div class="col-6 p-4">
-                            <div class="mb-3">
-                                <i class="bi bi-people display-3 gradient-text"></i>
-                            </div>
-                            <h3>Support for commercialization</h3>
-                            <p class="lead fw-normal text-muted">1:1 coaching with businesses and biotech experts.
-                            </p>
-                        </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        
         <div class="gradient-background pt-2 mt-5 mb-5">
             <section id="scrollspySupporters" class="py-2">
                 <div class="container-lg">
@@ -660,15 +684,30 @@
         </section>
         <section id="scrollspyServicesC3" class="py-4 ">
             <div class="container-lg pt-3">
-                <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Services</h2>
                 <div class="col-lg-10 align-self-start">
+                    <!-- 
+big section heading
+
+a heading to use once per section, describing the purpose of the section
+includes a flag item (optional), heading (required) and subheading (required)
+be careful, heading and subheading are sensitive to line breaks -->
+
+
+    <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Services
+    </h2>
+
+<p class="display-3 mb-4">Build More. Test More.  <br />
+                            Services to accelerate your science.</p>
+<p class="lead fw-normal text-muted mb-5 col-sm-6">Priced for cost-recovery.  <br />
+                            Keep your IP.</p>
+                    <!-- <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Services</h2>
                     <p class="display-3 mb-4">Build More. Test More.
                         </br>Services to accelerate your science.
                     </p>
                     <p class="lead fw-normal text-muted mb-5 col-sm-6">
                         Priced for cost-recovery.
                         Keep your IP.
-                    </p>
+                    </p> -->
                 </div>
                 <div class="container marketing">
                     <div class="row">
