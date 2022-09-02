@@ -1,0 +1,13 @@
+<!-- 
+big section heading
+
+a heading to use once per section, describing the purpose of the section
+includes a flag item (optional), heading (required) and subheading (required)
+be careful, heading and subheading are sensitive to line breaks -->
+
+{% if include.flag %}
+    <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">{{ include.flag }}
+    </h2>
+{% endif %}
+<p class="display-3 mb-4">{{ include.heading | default: "You are missing a heading" | newline_to_br}}</p>
+<p class="lead fw-normal text-muted mb-5 col-sm-6">{{ include.subheading | default: "You are missing a subheading" | newline_to_br }}</p>

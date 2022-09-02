@@ -10,22 +10,22 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                 {% for item in site.data.navigation %}
-                    {% if item.submenu %}
+                    {% if item[1].submenu %}
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="{{ item.link }}"
-                                role="button" aria-expanded="false">{{ item.name }}</a>
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="{{ item[1].link }}"
+                                role="button" aria-expanded="false">{{ item[1].name }}</a>
                             <ul class="dropdown-menu">
                                 {% for subitem in item.submenu %}
-                                <li><a class="dropdown-item" href="{{ subitem.link }}">{{ subitem.name }}</a></li>
+                                <li><a class="dropdown-item" href="{{ subitem[1].link }}">{{ subitem[1].name }}</a></li>
                                 {% endfor %}
                             </ul>
                         </li>
                     {% else %}
                         <li class="nav-item">
-                        {% if item.button == true %}
-                            <a class="nav-link btn btn-primary ms-2 text-white fw-semibold" href="{{ item.link }}">{{ item.name }}</a>
+                        {% if item[1].button == true %}
+                            <a class="nav-link btn btn-primary ms-2 text-white fw-semibold" href="{{ item[1].link }}">{{ item[1].name }}</a>
                         {% else %}
-                            <a class="nav-link" href="{{ item.link }}">{{ item.name }}</a>
+                            <a class="nav-link" href="{{ item[1].link }}">{{ item[1].name }}</a>
                         {% endif %}
                         </li>
                     {% endif %}

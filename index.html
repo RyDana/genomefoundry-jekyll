@@ -4,7 +4,23 @@ title: Home
 ---
 <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
         class="scrollspy bg-light" tabindex="0">
-        {% include hero.html %}
+
+        <!-- HERO SECTION -->
+        {% include sections/hero.html %}
+
+        <!-- ABOUT SECTION -->
+        <!-- Captures the about content -->
+        {% capture include_content %}
+            {% include sections/about.html %}
+        {% endcapture %}
+        <!-- Captures the scrollspy data for the about section. I think it's still iffy. -->
+        {% capture include_scrollspy %}
+            {{ site.data.navigation.about }}
+        {% endcapture %}
+        <!-- Sends the 'about content' and the 'about scrollspy data' into the default section wrapper -->
+        {% include section_wrappers/default.html content = include_content scrollspy = include_scrollspy %}
+
+        
         <section id="scrollspyAboutC" class="py-4 collapse">
             <div class="container-lg">
                 <div class="row">
@@ -124,7 +140,7 @@ title: Home
                 </div>
             </div>
         </section>
-        {% include about.html %}
+        
         <div class="gradient-background pt-2 mt-5 mb-5">
             <section id="scrollspySupporters" class="py-2">
                 <div class="container-lg">
@@ -489,15 +505,22 @@ title: Home
         </section>
         <section id="scrollspyServicesC3" class="py-4 ">
             <div class="container-lg pt-3">
-                <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Services</h2>
                 <div class="col-lg-10 align-self-start">
+                    {% include typography/big_section_heading.html 
+                        flag = "Services" 
+                        heading="Build More. Test More.  
+                            Services to accelerate your science." 
+                        subheading = "Priced for cost-recovery.  
+                            Keep your IP." 
+                    %}
+                    <!-- <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Services</h2>
                     <p class="display-3 mb-4">Build More. Test More.
                         </br>Services to accelerate your science.
                     </p>
                     <p class="lead fw-normal text-muted mb-5 col-sm-6">
                         Priced for cost-recovery.
                         Keep your IP.
-                    </p>
+                    </p> -->
                 </div>
                 <div class="container marketing">
                     <div class="row">
