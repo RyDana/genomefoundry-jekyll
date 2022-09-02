@@ -1,4 +1,4 @@
-<section id="{{ include.scrollspy.link | remove_first: '#'}}" class="py-4">
+<section {% if include.scrollspy %} id="{{ include.scrollspy | remove_first: '#' | strip }}"{% endif %} class="py-2">
     <div class="container-lg">
     {{ include.content }}
     </div>

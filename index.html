@@ -15,12 +15,23 @@ title: Home
         {% endcapture %}
         <!-- Captures the scrollspy data for the about section. I think it's still iffy. -->
         {% capture include_scrollspy %}
-            {{ site.data.navigation.about }}
+            {{ site.data.navigation.about.link }}
         {% endcapture %}
         <!-- Sends the 'about content' and the 'about scrollspy data' into the default section wrapper -->
         {% include section_wrappers/default.html content = include_content scrollspy = include_scrollspy %}
 
+        <!-- SUPPORTERS SECTION -->
+        {% capture gradient_content %}
+            {% capture include_content %}
+                {% include sections/logo_wall.html %}
+            {% endcapture %}
+            {% include section_wrappers/default.html content = include_content %}
+        {% endcapture %}
+        {% include section_wrappers/gradient_background.html content = gradient_content %}
+
         
+
+
         <section id="scrollspyAboutC" class="py-4 collapse">
             <div class="container-lg">
                 <div class="row">
@@ -141,28 +152,7 @@ title: Home
             </div>
         </section>
         
-        <div class="gradient-background pt-2 mt-5 mb-5">
-            <section id="scrollspySupporters" class="py-2">
-                <div class="container-lg">
-                    <h2 class="pt-3 fw-semibold text-white">Supported by</h2>
-                    <div class="row align-items-center mb-3 px-2">
-                        <div class="col-md-4 p-5">
-                            <img class="img-fluid"
-                                src="assets\images\partners\National_Research_Council_of_Canada_logo_white.png"
-                                alt="National Research Council of Canada logo">
-                        </div>
-                        <div class="col-md-4 p-5">
-                            <img class="img-fluid" src="assets\images\partners\CFI_white.png"
-                                alt="Canada Foundation for Fnnovation logo">
-                        </div>
-                        <div class="col-md-4 p-5">
-                            <img class="img-fluid" src="assets\images\partners\Concordia-logo-white.png"
-                                alt="Concordia University logo">
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+
         <section id="scrollspyServicesC" class="py-4 collapse">
             <div class="container-lg pt-3">
                 <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Services</h2>
