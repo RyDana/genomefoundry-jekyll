@@ -1,0 +1,18 @@
+- name: About
+  link: "#scrollspyAbout"
+- name: Services
+  link: "#scrollspyServices"
+  # submenu:
+  #   - name: High-Throughput DNA Assembly
+  #     link: "#scrollspyAssembly"
+  #   - name: Microbial Engineering
+  #     link: "#scrollspyMicrobial"
+  #   - name: Mammalian Cell Engineering
+  #     link: "#scrollspyMammalian"
+- name: Team
+  link: "#scrollspyTeam"
+- name: Opportunities
+  link: "#scrollspyOpportunities"
+- name: Contact Us
+  link: "#scrollspyContact"
+  button: true
