@@ -7,7 +7,7 @@ on:
 
 jobs:
   jekyll:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
 
@@ -20,12 +20,8 @@ jobs:
           ${{ runner.os }}-gems-
 
     # Standard usage
-    - uses:  helaili/jekyll-action@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
 
-    # Specify the Jekyll source location as a parameter
-    - uses: helaili/jekyll-action@v2
+    - uses: peaceiris/actions-gh-pages@v3
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        jekyll_src: 'genomefoundry-jekyll'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
