@@ -1,0 +1,18 @@
+- discount: 5%
+  product: Q-STRAND DNA fragments
+  product_link: https://www.ranomics.com/q-strand
+  id: qStrand
+  list:
+    - Double stranded DNA, with no limitation on the number of non-standard nucleotides.
+    - Integrate any IUPAC nucleotides (N, K, R, Y, S, W, M, B, D, H or V) anywhere in DNA fragment.
+    - Receive fragments in single tubes or 96-well plate formats.
+- discount: 15%
+  product: DNA Variant and Mutagenesis Libraries
+  product_link: https://www.ranomics.com/variant-libraries
+  id: dna
+  list:
+    - Precise libraries of long gene sequences (>5kb).
+    - Mutate residues in complex (high- / low-GC) regions.
+    - Control codon distribution for multiple residues.
+    - Readily mutate continuous and discontinuous residues easily.
+    - DNA variant libraries are shipped in 4-6 weeks and can be delivered as linear fragments or cloned vectors, as pooled or arrayed libraries.

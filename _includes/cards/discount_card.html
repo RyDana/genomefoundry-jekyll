@@ -1,0 +1,40 @@
+<!-- 
+discount card
+
+a card layout to indicate discounts and additional info in list
+must include id, discount, product, product_link (optional), and a list of details as parameters -->
+
+<div id="accordeon{{ include.id }}" class="accordion">
+    <div class="accordion-item mb-4">
+        <div class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse{{include.id}}" aria-expanded="false" aria-controls="collapse{{include.id}}">
+                <h3 class="fw-semibold p-3">
+                    <span class="mb-2 d-block">
+                        <span class="fs-1 gradient-text">{{ include.discount }}</span>
+                        <small class="text-muted fw-light">discount on</small>
+                    </span>
+                    {{ include.product }}
+                    {% if include.product_link %}
+                        <sup>
+                            <a href="{{ include.product_link }}" target="_blank">
+                                <i class="bi bi-question-circle-fill"></i>
+                                <span class="d-none">Learn more</span>
+                            </a>
+                        </sup>
+                    {% endif %}
+                </h3>
+            </button>
+        </div>
+        <div id="collapse{{include.id}}" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordeon{{ include.id }}">
+            <div class="accordion-body">
+                <ul class="list-group list-group-flush">
+                    {% for item in include.list %}
+                        <li class="list-group-item">{{item}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

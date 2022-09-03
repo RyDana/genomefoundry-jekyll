@@ -13,12 +13,8 @@ title: Home
         {% capture include_content %}
             {% include sections/about.html %}
         {% endcapture %}
-        <!-- Captures the scrollspy data for the about section. I think it's still iffy. -->
-        {% capture include_scrollspy %}
-            {{ site.data.navigation.about.link }}
-        {% endcapture %}
         <!-- Sends the 'about content' and the 'about scrollspy data' into the default section wrapper -->
-        {% include section_wrappers/default.html content = include_content scrollspy = include_scrollspy %}
+        {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.about.link %}
 
         <!-- SUPPORTERS SECTION -->
         {% capture gradient_content %}
@@ -750,97 +746,14 @@ title: Home
                 </div>
             </div>
         </section>
-        <section id="scrollspyDNA" class="py-4 ">
-            <div class="container-lg pt-3">
-                <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Supply</h2>
-                <div class="row justify-content-between">
+        
+        <!-- DNA DISCOUNT SECTION -->
+        {% capture include_content %}
+            {% include sections/dna_discount.html %}
+        {% endcapture %}
+        {% include section_wrappers/default.html content = include_content %}
 
-                    <div class="col-lg-6">
 
-                        <p class="display-3 mb-4">High Quality Synthetic DNA from a Canadian Supplier
-                        </p>
-                        <p class="lead fw-normal text-muted mb-5 col-md-8">
-                            All Genome Foundry users and laboratories belonging to the Concordia University Centre for
-                            Applied Synthetic Biology receive significant discounts on gene synthesis, provided by <a
-                                href="https://www.ranomics.com/" target="_blank">Ranomics</a>.
-                        </p>
-                    </div>
-                    <div class="col-lg-5">
-                        <div id="accordionDiscount1" class="accordion">
-                            <div class="accordion-item mb-4">
-                                <div class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
-                                        aria-controls="collapseOne">
-                                        <h3 class="fw-semibold p-3">
-                                            <span class="mb-2 d-block">
-                                                <span class="fs-1 gradient-text">5%</span>
-                                                <small class="text-muted fw-light">discount on</small></span>
-                                            Q-STRAND DNA fragments <sup><a href="https://www.ranomics.com/q-strand"
-                                                    target="_blank" ><i class="bi bi-question-circle-fill"></i><span class="d-none">Learn more</span></a></sup>
-
-                                        </h3>
-                                    </button>
-                                </div>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionDiscount1">
-                                    <div class="accordion-body">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Double stranded DNA, with no limitation on the
-                                                number of
-                                                non-standard nucleotides.</li>
-                                            <li class="list-group-item">Integrate any IUPAC nucleotides (N, K, R, Y, S,
-                                                W,
-                                                M, B,
-                                                D, H or V) anywhere in DNA fragment.</li>
-                                            <li class="list-group-item">Receive fragments in single tubes or 96-well
-                                                plate
-                                                formats.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="accordionDiscount2" class="accordion">
-                            <div class="accordion-item mb-4">
-                                <div class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
-                                        <h3 class="fw-semibold p-3">
-                                            <span class="mb-2 d-block">
-                                                <span class="fs-1 gradient-text">15%</span>
-                                                <small class="text-muted fw-light">discount on</small></span>
-                                            DNA Variant and Mutagenesis Libraries
-                                            <sup><a href="https://www.ranomics.com/variant-libraries" target="_blank"><i
-                                                        class="bi bi-question-circle-fill"></i><span class="d-none">Learn more</span></a></sup>
-                                        </h3>
-                                    </button>
-                                </div>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                    data-bs-parent="#accordionDiscount2">
-                                    <div class="accordion-body">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">Precise libraries of long gene sequences (>5kb).
-                                            </li>
-                                            <li class="list-group-item">Mutate residues in complex (high- / low-GC)
-                                                regions.
-                                            </li>
-                                            <li class="list-group-item">Control codon distribution for multiple
-                                                residues.</li>
-                                            <li class="list-group-item">Readily mutate continuous and discontinuous
-                                                residues
-                                                easily.</li>
-                                            <li class="list-group-item">DNA variant libraries are shipped in 4-6 weeks
-                                                and can
-                                                be delivered as linear fragments or cloned vectors, as pooled or arrayed
-                                                libraries.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-        </section>
         <div class="gradient-background pt-5 mb-5">
             <section id="scrollspyTeam" class="py-4">
                 <div class="container-lg">
