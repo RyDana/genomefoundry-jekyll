@@ -1,0 +1,13 @@
+<h2 class="pt-3 fw-semibold text-white">Meet the team</h2>
+<div class="d-flex flex-wrap justify-content-around mb-3">
+    {% for item in site.data.team %}
+        {% assign member = item[1] %}
+        {% include cards/team_member.html 
+            name = member.name
+            jobtitle = member.jobtitle
+            image = member.image
+            linkedin = member.linkedin
+            github = member.github
+        %}
+    {% endfor %}
+</div>

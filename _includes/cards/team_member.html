@@ -1,0 +1,36 @@
+<!-- 
+team member card
+
+a card layout to show a team member
+must include name, jobtitle, image, linkedin (optional), github (optional)
+possibility to make image size a variable in the future-->
+
+<div class="p-4">
+    <div style="width: 230px">
+        <div class="position-relative" >
+            <img src="{{include.image}}" height="230px" alt="photo of {{include.name}}">
+            {% if include.linkedin != nil or include.github != nil %}
+            <div class="btn-group bg-light position-absolute bottom-0 end-0">
+                {% if include.linkedin != nil %}
+                <a href="{{include.linkedin}}" target="_blank">
+                    <button type="button" class="btn btn-outline-primary">
+                        <i class="bi bi-linkedin"></i>
+                        <span class="visually-hidden">LinkedIn</span>
+                    </button>
+                </a>
+                {% endif %}
+                {% if include.github != nil %}
+                <a href="{{include.github}}" target="_blank">
+                    <button type="button" class="btn btn-outline-primary">
+                        <i class="bi bi-github"></i>
+                        <span class="visually-hidden">Github</span>
+                    </button>
+                </a>
+                {% endif %}
+            </div>
+            {% endif %}
+        </div>
+        <h3 class="text-white pt-3 fs-4">{{ include.name }}</h3>
+        <p class="text-light">{{ include.jobtitle }}</p>
+    </div>
+</div>

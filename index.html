@@ -17,6 +17,7 @@ title: Home
         {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.about.link %}
 
         <!-- SUPPORTERS SECTION -->
+        <!-- In addition to the default wrapper, this section is also wrapped in a second, gradient wrapper -->
         {% capture gradient_content %}
             {% capture include_content %}
                 {% include sections/logo_wall.html %}
@@ -753,169 +754,16 @@ title: Home
         {% endcapture %}
         {% include section_wrappers/default.html content = include_content %}
 
+        <!-- TEAM SECTION -->
+        {% capture gradient_content %}
+            {% capture include_content %}
+                {% include sections/team.html %}
+            {% endcapture %}
+            {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.team.link %}
+        {% endcapture %}
+        {% include section_wrappers/gradient_background.html content = gradient_content %}
 
-        <div class="gradient-background pt-5 mb-5">
-            <section id="scrollspyTeam" class="py-4">
-                <div class="container-lg">
-                    <h2 class="pt-3 fw-semibold text-white">Meet the team</h2>
-                    <div class="row justify-content-center mb-3">
-                        <div class="col-lg-6">
-                            <div class="row">
-                                <div class="col p-5">
-                                    <div class="position-relative">
-                                        <img class="img-fluid " src="assets\images\team\Kevin.png"
-                                            alt="Kevin Jacquet (PhD)">
-                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
-                                            <a href="https://www.linkedin.com/in/kevin-jacquet-ph-d-0a8a52b6/"
-                                                target="_blank">
-                                                <button type="button" class="btn btn-outline-primary">
-                                                    <i class="bi bi-linkedin"></i>
-                                                    <span class="visually-hidden">LinkedIn</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h3 class="text-white pt-3 fs-4">Kevin Jacquet (PhD)</h3>
-                                    <p class="text-light">Platform Coordinator</p>
-                                </div>
-                                <div class="col p-5">
-                                    <div class="position-relative">
-                                        <img class="img-fluid " src="assets\images\team\Nicholas.png"
-                                            alt="Nicholas Gold (MSc)">
-                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
-                                        </div>
-                                    </div>
-                                    <h3 class="text-white pt-3 fs-4">Nicholas Gold (MSc)</h3>
-                                    <p class="text-light">Platform Coordinator</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="row">
-                                <div class="col p-5">
-                                    <div class="position-relative">
-                                        <img class="img-fluid " src="assets\images\team\Angela.png"
-                                            alt="Angela Quach (MSc)">
-                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
-                                            <a href="https://www.linkedin.com/in/angela-quach-6648a4189"
-                                                target="_blank">
-                                                <button type="button" class="btn btn-outline-primary">
-                                                    <i class="bi bi-linkedin"></i>
-                                                    <span class="visually-hidden">LinkedIn</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h3 class="text-white pt-3 fs-4">Angela Quach (MSc)</h3>
-                                    <p class="text-light">Cell Editing Specialist </p>
-                                </div>
-                                <div class="col p-5">
-                                    <div class="position-relative">
-                                        <img class="img-fluid " src="assets\images\team\James.png"
-                                            alt="James Bagley (MSc)">
-                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
-                                            <a href="https://www.linkedin.com/in/james-bagley-410228aa" target="_blank">
-                                                <button type="button" class="btn btn-outline-primary">
-                                                    <i class="bi bi-linkedin"></i>
-                                                    <span class="visually-hidden">LinkedIn</span>
-                                                </button>
-                                            </a>
-                                            <a href="https://github.com/JamesBagley" target="_blank">
-                                                <button type="button" class="btn btn-outline-primary">
-                                                    <i class="bi bi-github"></i>
-                                                    <span class="visually-hidden">Github</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h3 class="text-white pt-3 fs-4">James Bagley (MSc)</h3>
-                                    <p class="text-light">Lab Automation Specialist</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="row">
-                                <div class="col p-5">
-                                    <div class="position-relative">
-                                        <img class="img-fluid " src="assets\images\team\Audrey.png"
-                                            alt="Audrey Morin (MSc)">
-                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
-                                            <a href="https://www.linkedin.com/in/audrey-morin-57236489" target="_blank">
-                                                <button type="button" class="btn btn-outline-primary">
-                                                    <i class="bi bi-linkedin"></i>
-                                                    <span class="visually-hidden">LinkedIn</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h3 class="text-white pt-3 fs-4">Audrey Morin (MSc)</h3>
-                                    <p class="text-light">Research & Administrative Coordinator</p>
-                                </div>
-                                <div class="col p-5">
-                                    <div class="position-relative">
-                                        <img class="img-fluid " src="assets\images\team\Flavia.png"
-                                            alt="Flavia Araujo (PhD)">
-                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
-                                            <a href="https://www.linkedin.com/in/flaviarba" target="_blank">
-                                                <button type="button" class="btn btn-outline-primary">
-                                                    <i class="bi bi-linkedin"></i>
-                                                    <span class="visually-hidden">LinkedIn</span>
-                                                </button>
-                                            </a>
-                                            <a href="https://github.com/frba" target="_blank">
-                                                <button type="button" class="btn btn-outline-primary">
-                                                    <i class="bi bi-github"></i>
-                                                    <span class="visually-hidden">Github</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h3 class="text-white pt-3 fs-4">Flavia Araujo (PhD)</h3>
-                                    <p class="text-light">Computer Scientist</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="row">
-                                <div class="col p-5">
-                                    <div class="position-relative">
-                                        <img class="img-fluid " src="assets\images\team\Benjamin.png"
-                                            alt="Benjamin Scott (PhD)">
-                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
-                                            <a href="https://www.linkedin.com/in/benjaminmscott" target="_blank">
-                                                <button type="button" class="btn btn-outline-primary">
-                                                    <i class="bi bi-linkedin"></i>
-                                                    <span class="visually-hidden">LinkedIn</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h3 class="text-white pt-3 fs-4">Benjamin Scott (PhD)</h3>
-                                    <p class="text-light">Advisor, Business Development</p>
-                                </div>
-                                <div class="col p-5">
-                                    <div class="position-relative">
-                                        <img class="img-fluid " src="assets\images\team\Vincent.png"
-                                            alt="Vincent Martin (PhD)">
-                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
-                                            <a href="https://www.linkedin.com/in/vincent-martin-233487158"
-                                                target="_blank">
-                                                <button type="button" class="btn btn-outline-primary">
-                                                    <i class="bi bi-linkedin"></i>
-                                                    <span class="visually-hidden">LinkedIn</span>
-                                                </button>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <h3 class="text-white pt-3 fs-4">Vincent Martin (PhD)</h3>
-                                    <p class="text-light">Director</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+
         <section id="scrollspyOpportunities" class="py-4 ">
             <div class="container-lg">
                 <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Opportunities</h2>
