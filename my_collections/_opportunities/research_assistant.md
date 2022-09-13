@@ -1,4 +1,5 @@
 ---
+published: true #this should only be true for pages ready to be published
 title: Research Assistant, Microbial Genome Engineering 
 subtitle: Multiple positions available
 description: #optional. if doesnt exist, willbe filled by the first words of the content
