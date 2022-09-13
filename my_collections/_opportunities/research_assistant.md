@@ -1,19 +1,19 @@
 ---
-published: true #this should only be true for pages ready to be published
+published: true 
 title: Research Assistant, Microbial Genome Engineering 
 subtitle: Multiple positions available
-description: #optional. if doesnt exist, willbe filled by the first words of the content
-applicationLink:  #default is genomefoundry's email. default is configured in _config.yml
+description: 
+application_link: 
 classification: Research Assistant under the CARE union at Concordia University
 salary: $27.37/hr
 hours: 35
 duration: 1 year, renewable
 startDate: as of August 2022
 supervisor: Dr. Vincent Martin
-location: >- # this means to ignore newlines until "unit:"
+location: |- # this means to ignore newlines until "unit:"
     7141 Sherbrooke St West, GE building,  
     Montreal, QC, H4B 1R6
-unit: >-
+unit: |-
     Centre for Applied Synthetic Biology at  
     Concordia University
 

@@ -1,0 +1,68 @@
+{% include typography/flag.html name="Contact Us" %}
+<div class="row">
+    <div class="col-md-5 my-3">
+        <h3 class="mb-3 fs-5">Contact Information</h3>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                <span>
+                    <i class="bi bi-envelope text-primary me-2 fs-4"></i>
+                </span> <a href="mailto:{{ site.data.contact.email }}"
+                    class="text-reset">{{ site.data.contact.email }}</a>
+            </li>
+            <li class="list-group-item">
+                <span>
+                    <i class="bi bi-telephone text-primary me-2 fs-4"></i>
+                </span> <a href="tel:{{ site.data.contact.telephone_link }}" class="text-reset">{{ site.data.contact.telephone }}</a>
+            </li>
+            <li class="list-group-item d-flex">
+                <span>
+                    <i class="bi bi-geo-alt text-primary me-2 fs-4"></i>
+                </span>{{ site.data.contact.address | newline_to_br }}
+            </li>
+        </ul>
+        <div>
+            <iframe
+                title="Map with location of genome foundry"
+                src="{{ site.data.contact.mapsIframe }}"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="form-floating col-md-7 my-3">
+        <h3 class="mb-3 fs-5">Contact Form</h3>
+        <form id="fs-frm" name="contact_form" accept-charset="utf-8" action="https://formspree.io/f/mknyyvrr" method="POST">
+            <fieldset id="fs-frm-inputs">
+                <div class="row  mb-3">
+                    <div class="col">
+                        <label for="full-name" class="d-none"><div class="contact-info-text">Full Name</div></label>
+                        <input type="text" class="form-control" placeholder="Full Name" aria-label="Full Name" required="" name="name" id="full-name">
+                    </div>
+                    <div class="col">
+                        <label for="email-address" class="d-none"><div class="contact-info-text">Email Address</div></label>
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Email" required="" name="_replyto" id="email-address">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="email-subject" class="d-none"><div class="contact-info-text">Subject</div></label>
+                        <input type="text" class="form-control" placeholder="Subject"
+                            aria-label="Subject" required="" name="subject" id="email-subject"></input>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="message" class="d-none"><div class="contact-info-text">Message</div></label>
+                        <textarea type="text" class="form-control" placeholder="Message" aria-label="Message"
+                            rows="5" required="" name="message" id="message"></textarea>
+                    </div>
+                </div>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <div class="row mb-3">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary mb-3">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

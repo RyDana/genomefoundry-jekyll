@@ -5,7 +5,7 @@ subtitle: #required, assign "" if want to leave empty
 description: #optional. if is empty, will be filled by the first words of the content
 #the remaining front matter has defaults set in the  _config.yml
 #leave empty to use default, assign "" to make empty, or write desired value to change default
-applicationLink:  
+application_link: 
 classification: 
 salary: 
 hours: 

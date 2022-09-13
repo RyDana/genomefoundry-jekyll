@@ -19,14 +19,10 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Genome Foundry
-email: genomefoundry@concordia.ca
-description: >- # this means to ignore newlines until "baseurl:"
-  The power of automation at the service of biology
+description: The power of automation at the service of biology
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "assets\\images\\logo\\genome_foundry_logo.svg"
-twitter_username: SynBioCU
-#github_username:
+logo: assets\images\logo\genome_foundry_logo.svg
 
 #specify a directory to store all your collections in the same place (_drafts and _posts need to be in this directory too)
 collections_dir: my_collections
@@ -48,22 +44,22 @@ collections:
 defaults:
   - 
     scope:
-      path: "opportunities"
+      path: "my_collections/_opportunities"
     values:
       title: Job title
       subtitle: Job subtitle
       description: 
-      applicationLink: mailto:GenomeFoundry@concordia.ca
+      application_link: mailto:GenomeFoundry@concordia.ca
       classification: Research Assistant under the CARE union at Concordia University
       salary: $27.37/hr
       hours: 35
       duration: 1 year, renewable
       startDate: as of August 2022
       supervisor: Dr. Vincent Martin
-      location: >- # this means to ignore newlines until "unit:"
+      location: |- # this means to ignore newlines until "unit:"
           7141 Sherbrooke St West, GE building,  
           Montreal, QC, H4B 1R6
-      unit: >-
+      unit: |-
           Centre for Applied Synthetic Biology at  
           Concordia University
   # - scope:
