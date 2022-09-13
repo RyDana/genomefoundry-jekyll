@@ -26,7 +26,51 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "assets\\images\\logo\\genome_foundry_logo.svg"
 twitter_username: SynBioCU
-#github_username:  
+#github_username:
+
+#specify a directory to store all your collections in the same place (_drafts and _posts need to be in this directory too)
+collections_dir: my_collections
+
+#allows grouping related content into folders
+collections:
+  opportunities:
+    # output: true # allows Jekyll to create a rendered page for each document in your collection
+    sort_by: date #date is automatically assigned by Jekyll
+  team:
+    output: true
+    # order:
+    #   - hello-world.md
+    #   - introduction.md
+    #   - basic-concepts.md
+    #   - advanced-concepts.md
+
+# configures the default front matter for each type of page
+defaults:
+  - 
+    scope:
+      path: "opportunities"
+    values:
+      title: Job title
+      subtitle: Job subtitle
+      description: ""
+      applicationLink: mailto:GenomeFoundry@concordia.ca
+      classification: Research Assistant under the CARE union at Concordia University
+      salary: $27.37/hr
+      hours: 35
+      duration: 1 year, renewable
+      startDate: as of August 2022
+      supervisor: Dr. Vincent Martin
+      location: >- # this means to ignore newlines until "unit:"
+          7141 Sherbrooke St West, GE building,  
+          Montreal, QC, H4B 1R6
+      unit: >-
+          Centre for Applied Synthetic Biology at  
+          Concordia University
+  # - scope:
+  #     path: ""
+  #     type: "team"
+  #   values:
+  #     layout: "team"
 
 # activate the following plugins
 plugins:

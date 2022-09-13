@@ -1,0 +1,18 @@
+{% include typography/flag.html name="Opportunities"%}
+<div class="row px-3">
+    {% for item in site.opportunities %}
+    <div class="card my-4">
+        <div class="card-body">
+            <h3 class="card-title">{{ item.title }}</h3>
+                <h4 class="card-subtitle mb-2 text-muted">{{ item.subtitle }}</h4>
+                {% if item.description != nil %}
+                    <p class="card-text">{{ item.description }}</p>
+                {% else %}
+                    <p class="card-text">{{ item.content | markdownify | strip_html | truncatewords: 40  }}</p>
+                {% endif %}
+                <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#{{item.id | slugify }}">Learn more</a>
+        </div>
+    </div>
+    {% include cards/opportunities_modal.html content = item %}
+    {% endfor %}
+</div>

@@ -1,0 +1,57 @@
+<div class="modal fade" id="{{item.id | slugify }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="opportunityLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header align-items-start">
+                <div>
+                    <h3 class="modal-title mb-2" id="opportunityLabel">{{ include.content.title }}</h3>
+                    <h4 class="modal-subtitle text-muted">{{ include.content.subtitle }}</h4>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group mb-3">
+                    <li class="list-group-item">
+                        <div class="fw-bold">Classification:</div>
+                        {{ include.content.classification }}
+                    </li>
+                    <li class="list-group-item">
+                        <div class="fw-bold">Salary:</div>
+                        {{ include.content.salary }}
+                    </li>
+                    <li class="list-group-item">
+                        <div class="fw-bold">Weekly Hours:</div>
+                        {{ include.content.hours }}
+                    </li>
+                    <li class="list-group-item">
+                        <div class="fw-bold">Duration: </div>
+                        {{ include.content.duration }}
+                    </li>
+                    <li class="list-group-item">
+                        <div class="fw-bold">Start Date: </div>
+                        {{ include.content.startDate }}
+                    </li>
+                    <li class="list-group-item">
+                        <div class="fw-bold">Principal Investigator or Immediate Supervisor: </div>
+                        {{ include.content.supervisor }}
+                    </li>
+                    <li class="list-group-item">
+                        <div class="fw-bold">Location: </div>
+                        {{ include.content.location }}
+                    </li>
+                    <li class="list-group-item">
+                        <div class="fw-bold">Unit: </div>
+                        {{ include.content.unit }}
+                    </li>
+                </ul>
+            {{ include.content.content }}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="{{ include.content.applicationLink }}">
+                    <button type="button" class="btn btn-primary">Apply</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

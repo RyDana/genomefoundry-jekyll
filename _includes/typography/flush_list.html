@@ -1,0 +1,12 @@
+<!-- 
+flush list
+
+takes a markdown unordered list and arranges it to fit the theme (no bullets, line between items) 
+CAREFUL the list must only be one level deep-->
+
+{% assign contentmd = include.content | markdownify | split: "<li>" | shift %}
+<ul class="list-group list-group-flush mb-2">
+    {% for item in contentmd %}
+    <li class="list-group-item">{{ item | strip_html }}</li>
+    {% endfor %}
+</ul>
