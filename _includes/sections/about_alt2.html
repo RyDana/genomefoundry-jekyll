@@ -1,5 +1,5 @@
 <div class="row justify-content-between">
-    <div class="col-lg-10">
+    <div class="col-lg-11">
     {% include typography/big_section_heading.html 
         flag = "About Us" 
         heading="The Concordia Genome Foundry is Canada’s platform for synthetic biology." 
@@ -9,30 +9,20 @@
     <div class="container marketing">
         <div class="row">
             {% for item in site.data.advantages %}
-            <div class="col-lg-3 mb-5">
-                <div class="mb-3">
-                    <i class="bi {{ item.icon }} display-3 gradient-text"></i>
+            <div class="col-lg-3 mb-5 d-flex">
+                <div class="me-3">
+                    <div class="icon-circle-primary">
+                        <i class="bi {{ item.icon }} fs-3 gradient-text with-circle"></i>
+                    </div>
                     <!-- <img class="img-fluid" src="assets\images\photos\20150908_District_3_offices.jpg"
                         alt=""> -->
                 </div>
-                <h3 class="">{{ item.name }}</h3>
+                <div class="">
+                <h3>{{ item.name }}</h3>
                 <p class="lead fw-normal text-muted">{{ item.description }}</p>
+                </div>
             </div>
             {% endfor %}
         </div>
     </div>
-    <!-- <div class="col-lg-6 text-center align-self-center">
-        <div class="row mb-3">
-            {% for item in site.data.advantages %}
-                <div class="col-6 p-4">
-                    <div class="mb-3">
-                        <i class="bi {{ item.icon }} display-3 gradient-text"></i>
-                    </div>
-                    <h3>{{ item.name }}</h3>
-                    <p class="lead fw-normal text-muted">{{ item.description }}
-                    </p>
-                </div>
-            {% endfor %}
-        </div>
-    </div> -->
 </div>

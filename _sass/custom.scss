@@ -14,3 +14,11 @@ $custom-color: #6406b1;
 .gradient-background-light {
   background: linear-gradient(to right bottom, #f0e7e3, #c9e9ff);
 }
+
+.icon-circle-primary {
+  background-color: tint-color($component-active-bg, 90%);
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  display: inline-block;
+}
