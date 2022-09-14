@@ -2336,4 +2336,6 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 
 .gradient-background-light { background: linear-gradient(to right bottom, #f0e7e3, #c9e9ff); }
 
+.icon-circle-primary { background-color: #e6f3f2; border-radius: 50%; height: 36px; width: 36px; display: inline-block; }
+
 /*# sourceMappingURL=main.css.map */
