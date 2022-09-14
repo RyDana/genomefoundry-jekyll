@@ -1,0 +1,46 @@
+<div class="col-lg-10 align-self-start">
+    {% include typography/big_section_heading.html
+    flag = "Services"
+    heading="Build More. Test More.
+    Services to accelerate your science."
+    subheading = "Priced for cost-recovery.
+    Keep your IP"
+    %}
+</div>
+<div class="marketing accordion accordion-flush dark-accordion" id="accordionFlushAssembly">
+    <div class="row">
+        {% for item in site.data.services %}
+        <div class="col-xxl-3 col-md-6 mb-5">
+            <div class="gradient-background h-100">
+                <div class="m-0 p-0"
+                    style="background: url('{{ item.image }}') center center; background-size:cover; min-height:310px">
+                </div>
+                <div class="p-3">
+                    <div class="accordion-item">
+                        <div class="accordion-header" id="heading{{item.id}}">
+                            <button class="accordion-button collapsed border-white border-bottom" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapse{{item.id}}" aria-expanded="false"
+                                aria-controls="collapse{{item.id}}">
+                                <h3 id="scrollspy{{item.id}}" >{{ item.heading }}</h3>
+                            </button>
+                        </div>
+                        <div id="collapse{{item.id}}" class="accordion-collapse collapse pt-2"
+                            aria-labelledby="heading{{item.id}}" data-bs-parent="#accordionFlushAssembly">
+                            <div class="accordion-body ">
+                                <ul class="list-group list-group-flush lead fw-normal ">
+                                    {% for element in item.list %}
+                                    <li class="list-group-item">{{ element}}</li>
+                                    {% endfor %}
+                                </ul>
+                                <!-- <p class="lead fw-normal">
+                                    {{ item.list }}
+                                </p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

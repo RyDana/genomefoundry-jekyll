@@ -1,0 +1,28 @@
+- heading: High-Throughput DNA Assembly
+  id: Assembly
+  image: assets/images/photos/20150908_District_3_offices.jpg
+  list:
+    - ">1500 plasmid assemblies/day"
+    - Automated DNA fragment analysis, ddPCR, qPCR
+    - Large scale prep of transfection-grade DNA
+- heading: Microbial Engineering
+  id: Microbial
+  image: assets/images/photos/20150908_District_3_offices.jpg
+  list:
+    - ">300 transformations & nucleic acid extractions/day"
+    - Automated colony picking
+    - Microlitre to >100L culturing capacity
+- heading: Mammalian Cell Engineering
+  id: Mammalian
+  image: assets/images/photos/20150908_District_3_offices.jpg
+  list:
+    - Generation and expansion of edited iPSC lines</br>
+    - State-of-the-art cell culture, QC for pluripotency</br>
+    - Multimode cell imaging
+- heading: High-Throughput Screening
+  id: Screening
+  image: assets/images/photos/20150908_District_3_offices.jpg
+  list:
+    - 96 autosampler LC-MS</br>
+    - Acoustic, bulk, & traditional liquid handling solutions</br>
+    - FACS, autosampling flow cytometer
