@@ -153,27 +153,27 @@ progress { vertical-align: baseline; }
 
 .lead { font-size: 1.25rem; font-weight: 300; }
 
-.display-1 { font-size: calc(1.625rem + 4.5vw); font-family: "Gill sans", Georgia, monospace; font-weight: 300; line-height: 1.2; }
+.display-1 { font-size: calc(1.625rem + 4.5vw); font-family: "Gill Sans MT", Helvetica, sans-serif; font-weight: 300; line-height: 1.2; }
 
 @media (min-width: 1200px) { .display-1 { font-size: 5rem; } }
 
-.display-2 { font-size: calc(1.575rem + 3.9vw); font-family: "Gill sans", Georgia, monospace; font-weight: 300; line-height: 1.2; }
+.display-2 { font-size: calc(1.575rem + 3.9vw); font-family: "Gill Sans MT", Helvetica, sans-serif; font-weight: 300; line-height: 1.2; }
 
 @media (min-width: 1200px) { .display-2 { font-size: 4.5rem; } }
 
-.display-3 { font-size: calc(1.525rem + 3.3vw); font-family: "Gill sans", Georgia, monospace; font-weight: 300; line-height: 1.2; }
+.display-3 { font-size: calc(1.525rem + 3.3vw); font-family: "Gill Sans MT", Helvetica, sans-serif; font-weight: 300; line-height: 1.2; }
 
 @media (min-width: 1200px) { .display-3 { font-size: 4rem; } }
 
-.display-4 { font-size: calc(1.475rem + 2.7vw); font-family: "Gill sans", Georgia, monospace; font-weight: 300; line-height: 1.2; }
+.display-4 { font-size: calc(1.475rem + 2.7vw); font-family: "Gill Sans MT", Helvetica, sans-serif; font-weight: 300; line-height: 1.2; }
 
 @media (min-width: 1200px) { .display-4 { font-size: 3.5rem; } }
 
-.display-5 { font-size: calc(1.425rem + 2.1vw); font-family: "Gill sans", Georgia, monospace; font-weight: 300; line-height: 1.2; }
+.display-5 { font-size: calc(1.425rem + 2.1vw); font-family: "Gill Sans MT", Helvetica, sans-serif; font-weight: 300; line-height: 1.2; }
 
 @media (min-width: 1200px) { .display-5 { font-size: 3rem; } }
 
-.display-6 { font-size: calc(1.375rem + 1.5vw); font-family: "Gill sans", Georgia, monospace; font-weight: 300; line-height: 1.2; }
+.display-6 { font-size: calc(1.375rem + 1.5vw); font-family: "Gill Sans MT", Helvetica, sans-serif; font-weight: 300; line-height: 1.2; }
 
 @media (min-width: 1200px) { .display-6 { font-size: 2.5rem; } }
 
@@ -2329,6 +2329,10 @@ textarea.form-control-lg { min-height: calc(1.5em + 1rem + 2px); }
 @media (min-width: 1200px) { .fs-1 { font-size: 2.5rem !important; } .fs-2 { font-size: 2rem !important; } .fs-3 { font-size: 1.75rem !important; } .fs-4 { font-size: 1.5rem !important; } }
 
 @media print { .d-print-inline { display: inline !important; } .d-print-inline-block { display: inline-block !important; } .d-print-block { display: block !important; } .d-print-grid { display: grid !important; } .d-print-table { display: table !important; } .d-print-table-row { display: table-row !important; } .d-print-table-cell { display: table-cell !important; } .d-print-flex { display: flex !important; } .d-print-inline-flex { display: inline-flex !important; } .d-print-none { display: none !important; } }
+
+.video-container { min-height: 300px; min-width: 300px; height: 100%; position: relative; }
+
+.video-container video { width: 100%; height: 100%; position: absolute; object-fit: cover; border-radius: 10px; }
 
 .gradient-text { background: linear-gradient(to right top, #01847f, #007c8a, #007293, #006697, #005995, #004e8b, #014381, #043877, #052e67); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
