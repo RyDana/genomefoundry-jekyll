@@ -15,9 +15,13 @@ $primary: #01847f;
 $border-radius: 0;
 $font-family-sans-serif:"Gill Sans MT", Helvetica, sans-serif;
 $list-group-bg: none;
+$text-muted: #adb5bd;
 
 // All of bootstrap SCSS (_sass/bootstrap/bootstrap.scss)
 @import "bootstrap/bootstrap";
+
+
+
 
 // Additional custom code file (_sass/custom.scss)
 // If custom CSS is needed, add it in _sass/custom.scss

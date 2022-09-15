@@ -6,7 +6,7 @@ includes a flag item (optional), heading (required) and subheading (required)
 be careful, heading and subheading are sensitive to line breaks -->
 
 {% if include.flag %}
-<h2 class="py-2 text-white fw-semibold">{{ include.flag | upcase }}</h2>
+<h2 class="py-2 text-primary fw-semibold">{{ include.flag }}</h2>
 {% endif %}
 <p class="display-3 mb-4 text-white">{{ include.heading | default: "You are missing a heading" | newline_to_br}}</p>
-<p class="lead fw-normal text-light mb-5 fs-4">{{ include.subheading | default: "You are missing a subheading" | newline_to_br }}</p>
+<p class="lead fw-normal text-muted mb-5 fs-4">{{ include.subheading | default: "You are missing a subheading" | newline_to_br }}</p>
