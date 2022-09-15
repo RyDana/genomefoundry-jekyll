@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
-<body>
-  <nav class="navbar navbar-expand-md sticky-top bg-light">
+<body class="fs-5">
+  <nav class="navbar navbar-expand-md sticky-top bg-light fs-5">
     <div class="container-lg">
         <a class="navbar-brand" href="#">
-            <img src="assets\images\logo\genome_foundry_logo.svg" width="200px" alt="genome foundry logo">
+            <img src="assets\images\logo\genome_foundry_logo.svg" width="250px" alt="genome foundry logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,7 +64,7 @@
                     
                         <li class="nav-item">
                         
-                            <a class="nav-link btn btn-primary ms-2 text-white fw-semibold" href="#scrollspyContact">Contact Us</a>
+                            <a class="nav-link btn btn-primary ms-2 text-white" href="#scrollspyContact">Contact Us</a>
                         
                         </li>
                     
@@ -77,7 +77,9 @@
     <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
     class="scrollspy bg-light" tabindex="0">
 
-    <div >
+    <div style = "background: 
+    radial-gradient(20% 45% at 100% 50%,#cb024e63 0,#03d2ca00 100%),
+    radial-gradient(20% 45% at 0% 50%,#03d2cb46 0,#03d2ca00 100%);">
     <!-- HERO SECTION -->
     <header class="masthead" style="padding-top: 9rem; padding-bottom: 9.5rem;">
     <div class="container-lg">
@@ -134,10 +136,10 @@
             </div>
             <div class="col-lg-7 mt-5 mt-md-0 order-md-1">
                 <div class="mb-lg-0">
-                    <h1 class="display-1">
+                    <h1 class="display-1 mb-5">
                         The power of <span class="fw-semibold gradient-text">automation</span> at the
                         service of <span class="fw-semibold gradient-text">biology</span></h1>
-                    <p class="lead fw-normal fs-3 text-muted col-sm-6">
+                    <p class="lead fw-normal fs-4 text-muted col-sm-10">
                         As a cutting edge innovator, what will you
                         build and test at a scale of 1,000? 100,000?
                         Build More. Test More?
@@ -191,7 +193,7 @@
 </section>
     </div>
 
-    <div style = "background: linear-gradient(0deg, #ffffff00 0%, #c9e9ff6c 85%, #ffffff00 100%);">
+    <div style="background: #030e0c;">
     <!-- ABOUT SECTION -->
     <!-- Captures the about content -->
     
@@ -200,7 +202,7 @@
     <div class="container-lg">
     
         <div class="row justify-content-between">
-    <div class="col-lg-8">
+    <div class="col-lg-12">
     <!-- 
 big section heading
 
@@ -209,76 +211,67 @@ includes a flag item (optional), heading (required) and subheading (required)
 be careful, heading and subheading are sensitive to line breaks -->
 
 
-    <!-- 
-flag
+<h2 class="py-2 text-white fw-semibold">ABOUT US</h2>
 
-a heading to use once per section, flagging the name of the section
-is used in big_section_heading.html
-must include a name as parameter-->
-<!-- <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">About Us</h2> -->
-<!-- <div class="tint-bg-primary"> -->
-<h2 class="py-2 gradient-text fs-3 fw-semibold" style="width:fit-content">ABOUT US</h2>
-<!-- </div> -->
-
-<p class="display-3 mb-4">The Concordia Genome Foundry is Canada’s platform for synthetic biology.</p>
-<p class="lead fw-normal text-muted mb-5 col-sm-8">We use lab automation to provide academics and companies with services to engineer biology at a scale beyond manual methods.</p>
+<p class="display-3 mb-4 text-white">The Concordia Genome Foundry is Canada’s platform for synthetic biology.</p>
+<p class="lead fw-normal text-light mb-5 fs-4">We use lab automation to provide academics and companies with services to engineer biology at a scale beyond manual methods.</p>
     </div>
     <div class="container marketing">
         <div class="row p-3">
             
             <div class="col-xl-3 col-md-6 mb-3 d-flex">
                 <div class="me-3">
-                    <div class="icon-circle-primary">
-                        <i class="bi bi-file-bar-graph fs-3 gradient-text with-circle"></i>
+                    <div class="icon-circle-primary-black">
+                        <i class="bi bi-file-bar-graph fs-3 text-primary"></i>
                     </div>
                     <!-- <img class="img-fluid" src="assets\images\photos\20150908_District_3_offices.jpg"
                         alt=""> -->
                 </div>
-                <div class="">
-                <h3>Test More</h3>
-                <p class="lead fw-normal text-muted">Experiment at scale of 96,384, and larger. Every day.</p>
+                <div class="text-white">
+                <h3 >Test More</h3>
+                <p class="lead fw-normal text-light">Experiment at scale of 96,384, and larger. Every day.</p>
                 </div>
             </div>
             
             <div class="col-xl-3 col-md-6 mb-3 d-flex">
                 <div class="me-3">
-                    <div class="icon-circle-primary">
-                        <i class="bi bi-fast-forward-circle fs-3 gradient-text with-circle"></i>
+                    <div class="icon-circle-primary-black">
+                        <i class="bi bi-fast-forward-circle fs-3 text-primary"></i>
                     </div>
                     <!-- <img class="img-fluid" src="assets\images\photos\20150908_District_3_offices.jpg"
                         alt=""> -->
                 </div>
-                <div class="">
-                <h3>Save time</h3>
-                <p class="lead fw-normal text-muted">More shots on goal gets you results faster.</p>
+                <div class="text-white">
+                <h3 >Save time</h3>
+                <p class="lead fw-normal text-light">More shots on goal gets you results faster.</p>
                 </div>
             </div>
             
             <div class="col-xl-3 col-md-6 mb-3 d-flex">
                 <div class="me-3">
-                    <div class="icon-circle-primary">
-                        <i class="bi bi-piggy-bank fs-3 gradient-text with-circle"></i>
+                    <div class="icon-circle-primary-black">
+                        <i class="bi bi-piggy-bank fs-3 text-primary"></i>
                     </div>
                     <!-- <img class="img-fluid" src="assets\images\photos\20150908_District_3_offices.jpg"
                         alt=""> -->
                 </div>
-                <div class="">
-                <h3>Save Money</h3>
-                <p class="lead fw-normal text-muted">Access equipment and experts, without having to find your own.</p>
+                <div class="text-white">
+                <h3 >Save Money</h3>
+                <p class="lead fw-normal text-light">Access equipment and experts, without having to find your own.</p>
                 </div>
             </div>
             
             <div class="col-xl-3 col-md-6 mb-3 d-flex">
                 <div class="me-3">
-                    <div class="icon-circle-primary">
-                        <i class="bi bi-people fs-3 gradient-text with-circle"></i>
+                    <div class="icon-circle-primary-black">
+                        <i class="bi bi-people fs-3 text-primary"></i>
                     </div>
                     <!-- <img class="img-fluid" src="assets\images\photos\20150908_District_3_offices.jpg"
                         alt=""> -->
                 </div>
-                <div class="">
-                <h3>Support for commercialization</h3>
-                <p class="lead fw-normal text-muted">1:1 coaching with businesses and biotech experts.</p>
+                <div class="text-white">
+                <h3 >Support for commercialization</h3>
+                <p class="lead fw-normal text-light">1:1 coaching with businesses and biotech experts.</p>
                 </div>
             </div>
             
@@ -467,12 +460,12 @@ is used in big_section_heading.html
 must include a name as parameter-->
 <!-- <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Services</h2> -->
 <!-- <div class="tint-bg-primary"> -->
-<h2 class="py-2 gradient-text fs-3 fw-semibold" style="width:fit-content">SERVICES</h2>
+<h2 class="py-2 gradient-text fw-semibold" style="width:fit-content">Services</h2>
 <!-- </div> -->
 
 <p class="display-3 mb-4">Build More. Test More.  <br />
                         Services to accelerate your science.</p>
-<p class="lead fw-normal text-muted mb-5 col-sm-8">Priced for cost-recovery.  <br />
+<p class="lead fw-normal text-muted mb-5 fs-4">Priced for cost-recovery.  <br />
                         Keep your IP.</p>
                 <!-- <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Services</h2>
                 <p class="display-3 mb-4">Build More. Test More.
@@ -654,13 +647,14 @@ must include a name as parameter-->
         </div>
     </section>
 
-    <div style = "background: linear-gradient(0deg, #ffffff00 0%, #c8f1ee94 70%, #ffffff00 100%);">
+    <div style = "background: 
+        radial-gradient(50.08% 44.51% at 0% 0%,#e7cb9e46 0,#e7cb9e00 100%);">
     <!-- SERVICES SECTION -->
     
     <section  id="scrollspyServices" class="py-5">
     <div class="container-lg">
     
-        <div class="col-lg-10 align-self-start">
+        <div class="col-lg-12 align-self-start">
     <!-- 
 big section heading
 
@@ -677,13 +671,12 @@ is used in big_section_heading.html
 must include a name as parameter-->
 <!-- <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Services</h2> -->
 <!-- <div class="tint-bg-primary"> -->
-<h2 class="py-2 gradient-text fs-3 fw-semibold" style="width:fit-content">SERVICES</h2>
+<h2 class="py-2 gradient-text fw-semibold" style="width:fit-content">Services</h2>
 <!-- </div> -->
 
 <p class="display-3 mb-4">Build More. Test More.<br />
     Services to accelerate your science.</p>
-<p class="lead fw-normal text-muted mb-5 col-sm-8">Priced for cost-recovery.<br />
-    Keep your IP</p>
+<p class="lead fw-normal text-muted mb-5 fs-4">Priced for cost-recovery. Keep your IP</p>
 </div>
 <div class="marketing accordion accordion-flush dark-accordion" id="accordionFlushAssembly">
     <div class="row">
@@ -840,23 +833,13 @@ must include a name as parameter-->
     </div>
 
     <div style="background: 
-        radial-gradient(50.08% 44.51% at 100% 100%,#a989f563 0,#7759c200 100%)">
+        radial-gradient(50.08% 44.51% at 100% 100%,#0172c263 0,#0172c200 100%);">
     <!-- DNA DISCOUNT SECTION -->
     
     <section  class="py-5">
     <div class="container-lg">
     
-        <!-- 
-flag
-
-a heading to use once per section, flagging the name of the section
-is used in big_section_heading.html
-must include a name as parameter-->
-<!-- <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Supply</h2> -->
-<!-- <div class="tint-bg-primary"> -->
-<h2 class="py-2 gradient-text fs-3 fw-semibold" style="width:fit-content">SUPPLY</h2>
-<!-- </div> -->
-<div class="row justify-content-between">
+        <div class="row justify-content-between">
     <div class="col-lg-6">
         
         <!-- 
@@ -868,7 +851,7 @@ be careful, heading and subheading are sensitive to line breaks -->
 
 
 <p class="display-3 mb-4">High Quality Synthetic DNA from a Canadian Supplier</p>
-<p class="lead fw-normal text-muted mb-5 col-sm-8"> All Genome Foundry users and laboratories belonging to the Concordia University Centre for Applied Synthetic Biology receive significant discounts on gene synthesis, provided by <a href="https://www.ranomics.com/" target="_blank">Ranomics</a>.<br />
+<p class="lead fw-normal text-muted mb-5 fs-4"> All Genome Foundry users and laboratories belonging to the Concordia University Centre for Applied Synthetic Biology receive significant discounts on gene synthesis, provided by <a href="https://www.ranomics.com/" target="_blank">Ranomics</a>.<br />
         </p>
     </div>
     <div class="col-lg-5">
@@ -884,7 +867,7 @@ must include id, discount, product, product_link (optional), and a list of detai
         <div class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseqStrand" aria-expanded="false" aria-controls="collapseqStrand">
-                <h3 class="fw-semibold p-3">
+                <h3 class="p-3">
                     <span class="mb-2 d-block">
                         <span class="fs-1 gradient-text">5%</span>
                         <small class="text-muted fw-light">discount on</small>
@@ -929,7 +912,7 @@ must include id, discount, product, product_link (optional), and a list of detai
         <div class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsedna" aria-expanded="false" aria-controls="collapsedna">
-                <h3 class="fw-semibold p-3">
+                <h3 class="p-3">
                     <span class="mb-2 d-block">
                         <span class="fs-1 gradient-text">15%</span>
                         <small class="text-muted fw-light">discount on</small>
@@ -975,18 +958,13 @@ must include id, discount, product, product_link (optional), and a list of detai
     </div>
 
 
-
-    <!-- In addition to the default wrapper, this section is also wrapped in a second, gradient wrapper -->
+    <div style="background: #030e0c;">
     
-    <div class=" pt-2" style="background: 
-    radial-gradient(50.08% 44.51% at 100% 0%,rgba(169, 137, 245, 0.267) 0,rgba(119,89,194,0) 100%),#000;">
-    
-        
-        <section  id="scrollspyTeam" class="py-5">
+    <section  id="scrollspyTeam" class="py-5">
     <div class="container-lg">
     
-            <!-- TEAM SECTION -->
-            <h2 class="pt-3 fw-semibold text-white">Meet the team</h2>
+        <!-- TEAM SECTION -->
+        <h2 class="pt-3 fw-semibold text-white">Meet the team</h2>
 <div class="d-flex flex-wrap justify-content-around mb-3">
     
         
@@ -1328,44 +1306,14 @@ possibility to make image size a variable in the future-->
 </div>
     
 </div>
-            <!-- SUPPORTERS SECTION -->
-            <h2 class="pt-3 fw-semibold text-white">Supported by</h2>
-<div class="d-flex flex-wrap justify-content-center align-items-center mb-3 px-2">
     
-        <div class="p-5">
-            <a href="https://nrc.canada.ca/en" >
-                <img height="50px"
-                    src="assets\images\partners\National_Research_Council_of_Canada_logo_white.png"
-                    alt="National Research Council of Canada logo">
-            </a>
-        </div>
-    
-        <div class="p-5">
-            <a href="https://www.innovation.ca/" >
-                <img height="70px"
-                    src="assets\images\partners\cfi-logo-new-light.svg"
-                    alt="Canada Foundation for Innovation logo">
-            </a>
-        </div>
-    
-        <div class="p-5">
-            <a href="https://www.concordia.ca/" >
-                <img height="50px"
-                    src="assets\images\partners\Concordia-logo-white.png"
-                    alt="Concordia University logo">
-            </a>
-        </div>
-    
-</div>
-        
     </div>
 </section>
-    
-</div>
+    </div>
 
     <!-- OPPORTUNITIES SECTION -->
     <div style="background: 
-    radial-gradient(60.76% 48.01% at 0% 0%,rgba(226,67,41,.2) 0,rgba(226,67,41,0) 100%)">
+    radial-gradient(60.76% 48.01% at 100% 0%,rgba(226,67,41,.2) 0,rgba(226,67,41,0) 100%)">
     
     <section  id="scrollspyOpportunities" class="py-5">
     <div class="container-lg">
@@ -1378,11 +1326,11 @@ is used in big_section_heading.html
 must include a name as parameter-->
 <!-- <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Opportunities</h2> -->
 <!-- <div class="tint-bg-primary"> -->
-<h2 class="py-2 gradient-text fs-3 fw-semibold" style="width:fit-content">OPPORTUNITIES</h2>
+<h2 class="py-2 gradient-text fw-semibold" style="width:fit-content">Opportunities</h2>
 <!-- </div> -->
 <div class="row px-3">
     
-    <div class="card my-4">
+    <div class="card my-4 p-0">
         <div class="card-body">
             <h3 class="card-title">Research Assistant, Microbial Genome Engineering</h3>
                 <h4 class="card-subtitle mb-2 text-muted">Multiple positions available</h4>
@@ -1614,7 +1562,7 @@ is used in big_section_heading.html
 must include a name as parameter-->
 <!-- <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Contact Us</h2> -->
 <!-- <div class="tint-bg-primary"> -->
-<h2 class="py-2 gradient-text fs-3 fw-semibold" style="width:fit-content">CONTACT US</h2>
+<h2 class="py-2 gradient-text fw-semibold" style="width:fit-content">Contact Us</h2>
 <!-- </div> -->
 <div class="row">
     <div class="col-md-5 my-3">
