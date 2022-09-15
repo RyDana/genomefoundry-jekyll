@@ -5,15 +5,19 @@ title: Home
 <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
     class="scrollspy bg-light" tabindex="0">
 
+    <div style="">
     <!-- HERO SECTION -->
     {% include sections/hero.html %}
+    
 
     <!-- TEMPORARY LOGO SECTION -->
     {% capture include_content %}
         {% include sections/logo_wall_oneline.html %}
     {% endcapture %}
     {% include section_wrappers/default.html content = include_content %}
+    </div>
 
+    <div style="background: linear-gradient(0deg, #ffffff00 0%, #c9e9ff6c 85%, #ffffff00 100%);">
     <!-- ABOUT SECTION -->
     <!-- Captures the about content -->
     {% capture include_content %}
@@ -21,17 +25,7 @@ title: Home
     {% endcapture %}
     <!-- Sends the 'about content' and the 'about scrollspy data' into the default section wrapper -->
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.about.link %}
-
-    <!-- SUPPORTERS SECTION -->
-    <!-- In addition to the default wrapper, this section is also wrapped in a second, gradient wrapper -->
-    {% capture gradient_content %}
-        {% capture include_content %}
-            {% include sections/logo_wall.html %}
-        {% endcapture %}
-        {% include section_wrappers/default.html content = include_content %}
-    {% endcapture %}
-    {% include section_wrappers/gradient_background.html content = gradient_content %}
-
+    </div>
 
     <section id="scrollspyServicesC" class="py-4 collapse">
         <div class="container-lg pt-3">
@@ -380,36 +374,51 @@ title: Home
         </div>
     </section>
 
+    <div style="background: linear-gradient(0deg, #ffffff00 0%, #c8f1ee94 70%, #ffffff00 100%);">
     <!-- SERVICES SECTION -->
     {% capture include_content %}
         {% include sections/services.html %}
     {% endcapture %}
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.services.link%}
+    </div>
 
+    <div style="background: 
+        radial-gradient(50.08% 44.51% at 100% 100%,#a989f563 0,#7759c200 100%)">
     <!-- DNA DISCOUNT SECTION -->
     {% capture include_content %}
         {% include sections/dna_discount.html %}
     {% endcapture %}
     {% include section_wrappers/default.html content = include_content %}
+    </div>
 
-    <!-- TEAM SECTION -->
+
+
+    <!-- In addition to the default wrapper, this section is also wrapped in a second, gradient wrapper -->
     {% capture gradient_content %}
         {% capture include_content %}
+            <!-- TEAM SECTION -->
             {% include sections/team.html %}
+            <!-- SUPPORTERS SECTION -->
+            {% include sections/logo_wall.html %}
         {% endcapture %}
         {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.team.link %}
     {% endcapture %}
     {% include section_wrappers/gradient_background.html content = gradient_content %}
 
     <!-- OPPORTUNITIES SECTION -->
+    <div style="background: 
+    radial-gradient(60.76% 48.01% at 0% 0%,rgba(226,67,41,.2) 0,rgba(226,67,41,0) 100%)">
     {% capture include_content %}
         {% include sections/opportunities.html %}
     {% endcapture %}
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.opportunities.link %}
+    </div>
 
+    <div style="background: linear-gradient(180deg, #ffffff00 0%, #f0b46f1f 100%);">
     <!-- CONTACT SECTION -->
     {% capture include_content %}
         {% include sections/contact.html %}
     {% endcapture %}
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.contact.link %}
+    </div>
 </div>
