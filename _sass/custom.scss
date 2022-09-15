@@ -43,6 +43,14 @@ $custom-color: #6406b1;
   display: inline-block;
 }
 
+.icon-circle-primary-black{
+  background-color: shade-color($primary, 60%);
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  display: inline-block;
+}
+
 .dark-accordion {
   --#{$prefix}accordion-bg: none;
   --#{$prefix}accordion-active-bg: none;
