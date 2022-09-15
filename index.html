@@ -8,6 +8,12 @@ title: Home
     <!-- HERO SECTION -->
     {% include sections/hero.html %}
 
+    <!-- TEMPORARY LOGO SECTION -->
+    {% capture include_content %}
+        {% include sections/logo_wall_oneline.html %}
+    {% endcapture %}
+    {% include section_wrappers/default.html content = include_content %}
+
     <!-- ABOUT SECTION -->
     <!-- Captures the about content -->
     {% capture include_content %}
