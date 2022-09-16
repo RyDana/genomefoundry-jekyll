@@ -1,8 +1,7 @@
-
-<div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
-    <h2 class="text-black-50">Supported by</h2>
+<div class="d-flex flex-wrap justify-content-center align-items-center mb-3">
+    <h2 class="text-black-50 m-5">Supported by</h2>
     {% for item in site.data.supporters %}
-        <div>
+        <div class="m-5">
             <a href="{{ item.link }}" >
                 <img height="{{ item.logo_height | minus: 15 }}px"
                     src="{{ item.logo }}"

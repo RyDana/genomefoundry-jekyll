@@ -1,5 +1,5 @@
 {% include typography/flag.html name="Meet the team" light = true %}
-<div class="d-flex flex-wrap justify-content-around mb-3">
+<div class="d-flex flex-wrap justify-content-around">
     {% for item in site.data.team %}
         {% assign member = item[1] %}
         {% include cards/team_member.html 
