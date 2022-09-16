@@ -1,0 +1,21 @@
+<!-- 
+big section heading
+
+a heading to use once per section, describing the purpose of the section
+includes a flag item (optional), heading (required), subheading (required) and boolean light (optional) to make the text light
+be careful, heading and subheading are sensitive to line breaks -->
+
+{% if include.light == true %}
+    {% assign headingColor = "text-white" %}
+    {% assign subheadingColor = "text-muted" %}
+    {% assign flagLight = true %}
+{% else %}
+    {% assign headingColor = "" %}
+    {% assign subheadingColor = "text-black-50" %}
+    {% assign flagLight = false %}
+{% endif %}
+{% if include.flag %}
+    {% include typography/flag.html name=include.flag light = flagLight %}
+{% endif %}
+<p class="display-3 mb-3 {{ headingColor }}">{{ include.heading | default: "You are missing a heading" | newline_to_br}}</p>
+<p class="lead mb-5 fs-4 {{ subheadingColor }}">{{ include.subheading | default: "You are missing a subheading" | newline_to_br }}</p>

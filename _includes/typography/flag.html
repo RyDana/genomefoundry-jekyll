@@ -1,0 +1,16 @@
+<!-- 
+flag
+
+a heading to use once per section, flagging the name of the section
+is used in big_section_heading.html
+must include a name as parameter and a boolean light to indicate color -->
+
+{% if include.light == true %}
+    {% assign color = "text-primary" %}
+{% else %}
+    {% assign color = "gradient-text" %}
+{% endif %}
+
+<!-- <div class="tint-bg-primary"> -->
+<h2 class="{{ color }}">{{ include.name }}</h2>
+<!-- </div> -->
