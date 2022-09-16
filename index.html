@@ -82,7 +82,7 @@
     radial-gradient(20% 45% at 100% 50%,#cb024e63 0,#03d2ca00 100%),
     radial-gradient(20% 45% at 0% 50%,#03d2cb46 0,#03d2ca00 100%);">
     <!-- HERO SECTION -->
-    <header class="masthead" style="padding-top: 9rem; padding-bottom: 9.5rem;">
+    <header class="masthead" style="padding-top: 9rem; padding-bottom: 4rem;">
     <div class="container-lg">
         <div class="row align-items-center">
             <div class="col-lg-5 position-relative mb-5 mb-md-0 order-md-2 d-grid">
@@ -229,9 +229,9 @@ must include a name as parameter and a boolean light to indicate color -->
 <p class="lead mb-5 fs-4 text-muted">We use lab automation to provide academics and companies with services to engineer biology at a scale beyond manual methods.</p>
     </div>
     <div class="container">
-        <div class="row p-3">
+        <div class="row">
             
-            <div class="col-xl-3 col-md-6 d-flex">
+            <div class="col-xl-3 col-md-6 d-flex py-3">
                 <div class="me-3">
                     <div class="icon-circle-primary-black">
                         <i class="bi bi-file-bar-graph fs-3 text-primary"></i>
@@ -245,7 +245,7 @@ must include a name as parameter and a boolean light to indicate color -->
                 </div>
             </div>
             
-            <div class="col-xl-3 col-md-6 d-flex">
+            <div class="col-xl-3 col-md-6 d-flex py-3">
                 <div class="me-3">
                     <div class="icon-circle-primary-black">
                         <i class="bi bi-fast-forward-circle fs-3 text-primary"></i>
@@ -259,7 +259,7 @@ must include a name as parameter and a boolean light to indicate color -->
                 </div>
             </div>
             
-            <div class="col-xl-3 col-md-6 d-flex">
+            <div class="col-xl-3 col-md-6 d-flex py-3">
                 <div class="me-3">
                     <div class="icon-circle-primary-black">
                         <i class="bi bi-piggy-bank fs-3 text-primary"></i>
@@ -273,7 +273,7 @@ must include a name as parameter and a boolean light to indicate color -->
                 </div>
             </div>
             
-            <div class="col-xl-3 col-md-6 d-flex">
+            <div class="col-xl-3 col-md-6 d-flex py-3">
                 <div class="me-3">
                     <div class="icon-circle-primary-black">
                         <i class="bi bi-people fs-3 text-primary"></i>
@@ -699,149 +699,169 @@ must include a name as parameter and a boolean light to indicate color -->
 <div class="accordion accordion-flush dark-accordion" id="accordionFlushAssembly">
     <div class="row">
         
-        <div class="col-xxl-3 col-md-6 mb-5">
-            <div class="bg-black h-100">
-                <div class="m-0 p-0"
-                    style="background: url('assets/images/photos/20150908_District_3_offices.jpg') center center; background-size:cover; min-height:310px">
-                </div>
-                <div class="p-3">
-                    <div class="accordion-item">
-                        <div class="accordion-header" id="headingAssembly">
-                            <button class="accordion-button collapsed border-white border-bottom" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseAssembly" aria-expanded="false"
-                                aria-controls="collapseAssembly">
-                                <h3 id="scrollspyAssembly" >High-Throughput DNA Assembly</h3>
-                            </button>
-                        </div>
-                        <div id="collapseAssembly" class="accordion-collapse collapse pt-2"
-                            aria-labelledby="headingAssembly" data-bs-parent="#accordionFlushAssembly">
-                            <div class="accordion-body ">
-                                <ul class="list-group list-group-flush lead fw-normal ">
-                                    
-                                    <li class="list-group-item">>1500 plasmid assemblies/day</li>
-                                    
-                                    <li class="list-group-item">Automated DNA fragment analysis, ddPCR, qPCR</li>
-                                    
-                                    <li class="list-group-item">Large scale prep of transfection-grade DNA</li>
-                                    
-                                </ul>
-                                <!-- <p class="lead fw-normal">
-                                    >1500 plasmid assemblies/dayAutomated DNA fragment analysis, ddPCR, qPCRLarge scale prep of transfection-grade DNA
-                                </p> -->
-                            </div>
+            <!-- 
+accordion that opens over a picture
+
+include.content should have image link, heading, id and a list of strings-->
+
+<div class="col-xxl-3 col-md-6 mb-5" style="height: 440px;">
+    <div class="h-100">
+        <div class="m-0 p-0 d-grid h-100"
+            style="background: url('assets/images/photos/20150908_District_3_offices.jpg') center center; background-size:cover; min-height:310px">
+            <div class="p-3 bg-black align-self-end">
+                <div class=" accordion-item">
+                    <div class="accordion-header" id="headingAssembly">
+                        <button class="accordion-button collapsed border-white border-bottom" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseAssembly" aria-expanded="false"
+                            aria-controls="collapseAssembly">
+                            <h3 id="scrollspyAssembly" >High-Throughput DNA Assembly</h3>
+                        </button>
+                    </div>
+                    <div id="collapseAssembly" class="accordion-collapse collapse pt-2"
+                        aria-labelledby="headingAssembly" data-bs-parent="#accordionFlushAssembly">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                
+                                <li class="list-group-item text-muted">>1500 plasmid assemblies/day</li>
+                                
+                                <li class="list-group-item text-muted">Automated DNA fragment analysis, ddPCR, qPCR</li>
+                                
+                                <li class="list-group-item text-muted">Large scale prep of transfection-grade DNA</li>
+                                
+                            </ul>
+                            <!-- <p class="lead fw-normal">
+                                >1500 plasmid assemblies/dayAutomated DNA fragment analysis, ddPCR, qPCRLarge scale prep of transfection-grade DNA
+                            </p> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
         
-        <div class="col-xxl-3 col-md-6 mb-5">
-            <div class="bg-black h-100">
-                <div class="m-0 p-0"
-                    style="background: url('assets/images/photos/20150908_District_3_offices.jpg') center center; background-size:cover; min-height:310px">
-                </div>
-                <div class="p-3">
-                    <div class="accordion-item">
-                        <div class="accordion-header" id="headingMicrobial">
-                            <button class="accordion-button collapsed border-white border-bottom" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseMicrobial" aria-expanded="false"
-                                aria-controls="collapseMicrobial">
-                                <h3 id="scrollspyMicrobial" >Microbial Engineering</h3>
-                            </button>
-                        </div>
-                        <div id="collapseMicrobial" class="accordion-collapse collapse pt-2"
-                            aria-labelledby="headingMicrobial" data-bs-parent="#accordionFlushAssembly">
-                            <div class="accordion-body ">
-                                <ul class="list-group list-group-flush lead fw-normal ">
-                                    
-                                    <li class="list-group-item">>300 transformations & nucleic acid extractions/day</li>
-                                    
-                                    <li class="list-group-item">Automated colony picking</li>
-                                    
-                                    <li class="list-group-item">Microlitre to >100L culturing capacity</li>
-                                    
-                                </ul>
-                                <!-- <p class="lead fw-normal">
-                                    >300 transformations & nucleic acid extractions/dayAutomated colony pickingMicrolitre to >100L culturing capacity
-                                </p> -->
-                            </div>
+            <!-- 
+accordion that opens over a picture
+
+include.content should have image link, heading, id and a list of strings-->
+
+<div class="col-xxl-3 col-md-6 mb-5" style="height: 440px;">
+    <div class="h-100">
+        <div class="m-0 p-0 d-grid h-100"
+            style="background: url('assets/images/photos/20150908_District_3_offices.jpg') center center; background-size:cover; min-height:310px">
+            <div class="p-3 bg-black align-self-end">
+                <div class=" accordion-item">
+                    <div class="accordion-header" id="headingMicrobial">
+                        <button class="accordion-button collapsed border-white border-bottom" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseMicrobial" aria-expanded="false"
+                            aria-controls="collapseMicrobial">
+                            <h3 id="scrollspyMicrobial" >Microbial Engineering</h3>
+                        </button>
+                    </div>
+                    <div id="collapseMicrobial" class="accordion-collapse collapse pt-2"
+                        aria-labelledby="headingMicrobial" data-bs-parent="#accordionFlushAssembly">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                
+                                <li class="list-group-item text-muted">>300 transformations & nucleic acid extractions/day</li>
+                                
+                                <li class="list-group-item text-muted">Automated colony picking</li>
+                                
+                                <li class="list-group-item text-muted">Microlitre to >100L culturing capacity</li>
+                                
+                            </ul>
+                            <!-- <p class="lead fw-normal">
+                                >300 transformations & nucleic acid extractions/dayAutomated colony pickingMicrolitre to >100L culturing capacity
+                            </p> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
         
-        <div class="col-xxl-3 col-md-6 mb-5">
-            <div class="bg-black h-100">
-                <div class="m-0 p-0"
-                    style="background: url('assets/images/photos/20150908_District_3_offices.jpg') center center; background-size:cover; min-height:310px">
-                </div>
-                <div class="p-3">
-                    <div class="accordion-item">
-                        <div class="accordion-header" id="headingMammalian">
-                            <button class="accordion-button collapsed border-white border-bottom" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseMammalian" aria-expanded="false"
-                                aria-controls="collapseMammalian">
-                                <h3 id="scrollspyMammalian" >Mammalian Cell Engineering</h3>
-                            </button>
-                        </div>
-                        <div id="collapseMammalian" class="accordion-collapse collapse pt-2"
-                            aria-labelledby="headingMammalian" data-bs-parent="#accordionFlushAssembly">
-                            <div class="accordion-body ">
-                                <ul class="list-group list-group-flush lead fw-normal ">
-                                    
-                                    <li class="list-group-item">Generation and expansion of edited iPSC lines</br></li>
-                                    
-                                    <li class="list-group-item">State-of-the-art cell culture, QC for pluripotency</br></li>
-                                    
-                                    <li class="list-group-item">Multimode cell imaging</li>
-                                    
-                                </ul>
-                                <!-- <p class="lead fw-normal">
-                                    Generation and expansion of edited iPSC lines</br>State-of-the-art cell culture, QC for pluripotency</br>Multimode cell imaging
-                                </p> -->
-                            </div>
+            <!-- 
+accordion that opens over a picture
+
+include.content should have image link, heading, id and a list of strings-->
+
+<div class="col-xxl-3 col-md-6 mb-5" style="height: 440px;">
+    <div class="h-100">
+        <div class="m-0 p-0 d-grid h-100"
+            style="background: url('assets/images/photos/20150908_District_3_offices.jpg') center center; background-size:cover; min-height:310px">
+            <div class="p-3 bg-black align-self-end">
+                <div class=" accordion-item">
+                    <div class="accordion-header" id="headingMammalian">
+                        <button class="accordion-button collapsed border-white border-bottom" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseMammalian" aria-expanded="false"
+                            aria-controls="collapseMammalian">
+                            <h3 id="scrollspyMammalian" >Mammalian Cell Engineering</h3>
+                        </button>
+                    </div>
+                    <div id="collapseMammalian" class="accordion-collapse collapse pt-2"
+                        aria-labelledby="headingMammalian" data-bs-parent="#accordionFlushAssembly">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                
+                                <li class="list-group-item text-muted">Generation and expansion of edited iPSC lines</br></li>
+                                
+                                <li class="list-group-item text-muted">State-of-the-art cell culture, QC for pluripotency</br></li>
+                                
+                                <li class="list-group-item text-muted">Multimode cell imaging</li>
+                                
+                            </ul>
+                            <!-- <p class="lead fw-normal">
+                                Generation and expansion of edited iPSC lines</br>State-of-the-art cell culture, QC for pluripotency</br>Multimode cell imaging
+                            </p> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
         
-        <div class="col-xxl-3 col-md-6 mb-5">
-            <div class="bg-black h-100">
-                <div class="m-0 p-0"
-                    style="background: url('assets/images/photos/20150908_District_3_offices.jpg') center center; background-size:cover; min-height:310px">
-                </div>
-                <div class="p-3">
-                    <div class="accordion-item">
-                        <div class="accordion-header" id="headingScreening">
-                            <button class="accordion-button collapsed border-white border-bottom" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseScreening" aria-expanded="false"
-                                aria-controls="collapseScreening">
-                                <h3 id="scrollspyScreening" >High-Throughput Screening</h3>
-                            </button>
-                        </div>
-                        <div id="collapseScreening" class="accordion-collapse collapse pt-2"
-                            aria-labelledby="headingScreening" data-bs-parent="#accordionFlushAssembly">
-                            <div class="accordion-body ">
-                                <ul class="list-group list-group-flush lead fw-normal ">
-                                    
-                                    <li class="list-group-item">96 autosampler LC-MS</br></li>
-                                    
-                                    <li class="list-group-item">Acoustic, bulk, & traditional liquid handling solutions</br></li>
-                                    
-                                    <li class="list-group-item">FACS, autosampling flow cytometer</li>
-                                    
-                                </ul>
-                                <!-- <p class="lead fw-normal">
-                                    96 autosampler LC-MS</br>Acoustic, bulk, & traditional liquid handling solutions</br>FACS, autosampling flow cytometer
-                                </p> -->
-                            </div>
+            <!-- 
+accordion that opens over a picture
+
+include.content should have image link, heading, id and a list of strings-->
+
+<div class="col-xxl-3 col-md-6 mb-5" style="height: 440px;">
+    <div class="h-100">
+        <div class="m-0 p-0 d-grid h-100"
+            style="background: url('assets/images/photos/20150908_District_3_offices.jpg') center center; background-size:cover; min-height:310px">
+            <div class="p-3 bg-black align-self-end">
+                <div class=" accordion-item">
+                    <div class="accordion-header" id="headingScreening">
+                        <button class="accordion-button collapsed border-white border-bottom" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseScreening" aria-expanded="false"
+                            aria-controls="collapseScreening">
+                            <h3 id="scrollspyScreening" >High-Throughput Screening</h3>
+                        </button>
+                    </div>
+                    <div id="collapseScreening" class="accordion-collapse collapse pt-2"
+                        aria-labelledby="headingScreening" data-bs-parent="#accordionFlushAssembly">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                
+                                <li class="list-group-item text-muted">96 autosampler LC-MS</br></li>
+                                
+                                <li class="list-group-item text-muted">Acoustic, bulk, & traditional liquid handling solutions</br></li>
+                                
+                                <li class="list-group-item text-muted">FACS, autosampling flow cytometer</li>
+                                
+                            </ul>
+                            <!-- <p class="lead fw-normal">
+                                96 autosampler LC-MS</br>Acoustic, bulk, & traditional liquid handling solutions</br>FACS, autosampling flow cytometer
+                            </p> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
         
     </div>
 </div>
@@ -1372,7 +1392,13 @@ must include a name as parameter and a boolean light to indicate color -->
                 <a href="" class="card-link btn btn-link" data-bs-toggle="modal" data-bs-target="#opportunities-research-assistant">Learn more</a>
         </div>
     </div>
-    <div class="modal fade" id="opportunities-research-assistant" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <!-- 
+opportunities modal
+
+a modal that shows the details of a job opportunity
+include.content is the .md file from the opportunities collection-->
+
+<div class="modal fade" id="opportunities-research-assistant" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="opportunityLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
