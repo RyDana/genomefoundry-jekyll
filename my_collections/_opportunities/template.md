@@ -24,13 +24,13 @@ Parahraph...
 
 ##### list
 
-<!-- to format lists approprietely, use the flush_list.html include thusly -->
+<!-- to format lists approprietely, use the flush_list_from_md.html include thusly -->
 {% capture list %}
 - item 1
 - item 2
 - item 3
 {% endcapture %}
-{% include typography/flush_list.html content = list %}
+{% include typography/flush_list_from_md.html content = list %}
 
 
 

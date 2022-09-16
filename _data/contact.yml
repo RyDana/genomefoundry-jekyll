@@ -1,9 +1,22 @@
-email: genomefoundry@concordia.ca
-telephone: (514) 848-2424 ext. 2438
-telephone_link: +15148482424;2438 #this allows mobile users to click on the number to make the call
-address: |-
-  7141 Sherbrooke St West, GE building,  
-  Montreal, QC, H4B 1R6
-mapsIframe: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5597.274156403949!2d-73.64867448806763!3d45.45696899788426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9172e70050287%3A0xc4df37b92817328e!2sCentre%20for%20Structural%20and%20Functional%20Genomics%20(GE)!5e0!3m2!1sen!2sca!4v1653612428712!5m2!1sen!2sca
-twitter_username: SynBioCU
+contact:
+  email: 
+    text: genomefoundry@concordia.ca
+    icon: bi-envelope
+    link: mailto:genomefoundry@concordia.ca
+  telephone: 
+    text: (514) 848-2424 ext. 2438
+    icon: bi-telephone
+    link: tel:+15148482424;2438 #this allows mobile users to click on the number to make the call
+  address:
+    text: |-
+      7141 Sherbrooke St West, GE building,  
+      Montreal, QC, H4B 1R6
+    icon: bi-geo-alt
+    link: https://goo.gl/maps/TAA9axwLgRZyLHwZ8
+    iframe: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5597.274156403949!2d-73.64867448806763!3d45.45696899788426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9172e70050287%3A0xc4df37b92817328e!2sCentre%20for%20Structural%20and%20Functional%20Genomics%20(GE)!5e0!3m2!1sen!2sca!4v1653612428712!5m2!1sen!2sca
+social_media:
+  twitter: 
+    text: SynBioCU
+    icon: bi-twitter
+    link: https://twitter.com/SynBioCU
 #github_username:

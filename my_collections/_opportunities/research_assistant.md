@@ -58,7 +58,7 @@ These are key positions of the Genome Foundry; the Research Assistants will need
 - Responsible for upkeep of inventory (consumables, DNA stocks, strain collection).
 - Work in interdisciplinary teams and collaborate with scientists on several projects in parallel.
 {% endcapture %}
-{% include typography/flush_list.html content = list %}
+{% include typography/flush_list_from_md.html content = list %}
 
 
 ##### Qualifications
@@ -72,7 +72,7 @@ These are key positions of the Genome Foundry; the Research Assistants will need
 - Experience with next-generation sequencing library preparation an asset.
 - Experience with programing (Python or R) is an asset.
 {% endcapture %}
-{% include typography/flush_list.html content = list %}
+{% include typography/flush_list_from_md.html content = list %}
 
 
 ##### Application Instructions
@@ -97,7 +97,7 @@ Centre for Applied Synthetic Biology, GE120.23
 - On-site gym and parking for a fee
 - Learning resources
 {% endcapture %}
-{% include typography/flush_list.html content = list %}
+{% include typography/flush_list_from_md.html content = list %}
 
 
 ##### Equal opportunity

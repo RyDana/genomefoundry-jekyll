@@ -1,4 +1,4 @@
-<h2 class="py-3 fw-semibold text-primary">Meet the team</h2>
+{% include typography/flag_light.html name="Meet the team" %}
 <div class="d-flex flex-wrap justify-content-around mb-3">
     {% for item in site.data.team %}
         {% assign member = item[1] %}

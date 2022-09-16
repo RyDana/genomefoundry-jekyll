@@ -1,4 +1,4 @@
-{% include typography/flag.html name="Opportunities"%}
+{% include typography/flag_dark.html name="Opportunities"%}
 <div class="row px-3">
     {% for item in site.opportunities %}
     <div class="card my-4 p-0">
@@ -10,7 +10,7 @@
                 {% else %}
                     <p class="card-text">{{ item.content | markdownify | strip_html | truncatewords: 40  }}</p>
                 {% endif %}
-                <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#{{item.id | slugify }}">Learn more</a>
+                <a href="" class="card-link btn btn-link" data-bs-toggle="modal" data-bs-target="#{{item.id | slugify }}">Learn more</a>
         </div>
     </div>
     {% include cards/opportunities_modal.html content = item %}
