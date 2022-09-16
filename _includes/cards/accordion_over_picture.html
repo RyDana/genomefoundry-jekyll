@@ -1,0 +1,36 @@
+<!-- 
+accordion that opens over a picture
+
+include.content should have image link, heading, id and a list of strings-->
+
+<div class="col-xxl-3 col-md-6 mb-5" style="height: 440px;">
+    <div class="h-100">
+        <div class="m-0 p-0 d-grid h-100"
+            style="background: url('{{ include.content.image }}') center center; background-size:cover; min-height:310px">
+            <div class="p-3 bg-black align-self-end">
+                <div class=" accordion-item">
+                    <div class="accordion-header" id="heading{{include.content.id}}">
+                        <button class="accordion-button collapsed border-white border-bottom" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapse{{include.content.id}}" aria-expanded="false"
+                            aria-controls="collapse{{include.content.id}}">
+                            <h3 id="scrollspy{{include.content.id}}" >{{ include.content.heading }}</h3>
+                        </button>
+                    </div>
+                    <div id="collapse{{include.content.id}}" class="accordion-collapse collapse pt-2"
+                        aria-labelledby="heading{{include.content.id}}" data-bs-parent="#accordionFlushAssembly">
+                        <div class="accordion-body">
+                            <ul class="list-group list-group-flush">
+                                {% for element in include.content.list %}
+                                <li class="list-group-item text-muted">{{ element}}</li>
+                                {% endfor %}
+                            </ul>
+                            <!-- <p class="lead fw-normal">
+                                {{ item.list }}
+                            </p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
