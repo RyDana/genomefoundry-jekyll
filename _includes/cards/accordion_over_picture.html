@@ -13,7 +13,7 @@ include.content should have image link, heading, id and a list of strings-->
                         <button class="accordion-button collapsed border-white border-bottom" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapse{{include.content.id}}" aria-expanded="false"
                             aria-controls="collapse{{include.content.id}}">
-                            <h3 id="scrollspy{{include.content.id}}" >{{ include.content.heading }}</h3>
+                            <h3 id="scrollspy{{include.content.id}}" class="me-5">{{ include.content.heading }}</h3>
                         </button>
                     </div>
                     <div id="collapse{{include.content.id}}" class="accordion-collapse collapse pt-2"

@@ -1,4 +1,7 @@
-$custom-color: #6406b1;
+body{
+  overflow-x: hidden;
+  font-size: $h5-font-size;
+}
 
 .video-container {
   min-height: 300px;

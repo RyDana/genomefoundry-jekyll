@@ -5,7 +5,7 @@ a card layout to show a team member
 must include name, jobtitle, image, linkedin (optional), github (optional)
 possibility to make image size a variable in the future-->
 
-<div class="m-4">
+<div class="m-4 p-2">
     <div style="width: 230px">
         <div class="position-relative" >
             <div class="d-grid">
@@ -21,7 +21,7 @@ possibility to make image size a variable in the future-->
                 <img src="{{include.image}}" height="230px" alt="photo of {{include.name}}" style="grid-column: 1; grid-row: 1; z-index: 1;">
             </div>
             {% if include.linkedin != nil or include.github != nil %}
-            <div class="position-absolute bottom-0 end-0" style="z-index: 2;">
+            <div class="position-absolute bottom-0 end-0" style="z-index: 2; transform: translateX(10px);">
                 {% if include.linkedin != nil %}
                 <a href="{{include.linkedin}}" target="_blank">
                     <button type="button" class="btn btn-primary rounded-pill">

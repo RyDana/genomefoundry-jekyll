@@ -4,16 +4,16 @@ about:
 services:
   name: Services
   link: "#scrollspyServices"
-  submenu:
-    assembly:
-      name: High-Throughput DNA Assembly
-      link: "#scrollspyAssembly"
-    microbial:
-      name: Microbial Engineering
-      link: "#scrollspyMicrobial"
-    mammalian:
-      name: Mammalian Cell Engineering
-      link: "#scrollspyMammalian"
+  # submenu:
+  #   assembly:
+  #     name: High-Throughput DNA Assembly
+  #     link: "#scrollspyAssembly"
+  #   microbial:
+  #     name: Microbial Engineering
+  #     link: "#scrollspyMicrobial"
+  #   mammalian:
+  #     name: Mammalian Cell Engineering
+  #     link: "#scrollspyMammalian"
 team:
   name: Team
   link: "#scrollspyTeam"
