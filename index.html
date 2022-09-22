@@ -76,8 +76,8 @@
     <!-- HERO SECTION -->
     <header class="masthead pb-5 pt-3">
     <div class="container-lg d-grid position-relative align-items-end">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
-            style="grid-column: 1; grid-row: 1; z-index:0; position: absolute; top: 0; right: -50px;" width="200px">
+        <div style="grid-column: 1; grid-row: 1; z-index:0; position: absolute; top: 0; right: -150px; filter:blur(8px);" >
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="50vh">
             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" style="stop-color: #03d2ca;"></stop>
                 <stop offset="100%" style="stop-color: #0172c2;"></stop>
@@ -86,6 +86,18 @@
                 d="M40.1,-49.9C51.4,-38.3,59.5,-25.1,66.4,-8.4C73.4,8.4,79.1,28.7,71.9,42C64.8,55.2,44.7,61.5,27.6,61.6C10.4,61.8,-3.8,55.7,-18,50.3C-32.3,44.8,-46.4,39.9,-57,29.2C-67.6,18.5,-74.6,2.1,-71.2,-11.7C-67.7,-25.5,-53.9,-36.6,-40.3,-47.8C-26.7,-58.9,-13.3,-70.2,0.5,-70.8C14.4,-71.5,28.8,-61.5,40.1,-49.9Z"
                 transform="translate(100 100)" />
         </svg>
+        </div>
+        <div style="grid-column: 1; grid-row: 1; z-index:0; position: absolute; bottom: -150px; left: -150px; filter:blur(8px);" >
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="50vh">
+            <linearGradient id="grad14" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color: #e7cb9e;"></stop>
+                <stop offset="100%" style="stop-color: #b18c62;"></stop>
+            </linearGradient>
+            <path fill="url(#grad14)" style="opacity: 0.66;"
+                d="M40.1,-49.9C51.4,-38.3,59.5,-25.1,66.4,-8.4C73.4,8.4,79.1,28.7,71.9,42C64.8,55.2,44.7,61.5,27.6,61.6C10.4,61.8,-3.8,55.7,-18,50.3C-32.3,44.8,-46.4,39.9,-57,29.2C-67.6,18.5,-74.6,2.1,-71.2,-11.7C-67.7,-25.5,-53.9,-36.6,-40.3,-47.8C-26.7,-58.9,-13.3,-70.2,0.5,-70.8C14.4,-71.5,28.8,-61.5,40.1,-49.9Z"
+                transform="translate(100 100)" />
+        </svg>
+        </div>
         <div class="video-container me-lg-5 me-0"
             style="grid-column: 1; grid-row: 1; z-index:1; min-height: 80vh;">
             <video autoplay muted loop poster="">
@@ -186,34 +198,36 @@ must include a name as parameter and a boolean light to indicate color -->
 <p class="lead mb-5 fs-4 text-muted">We use lab automation to provide academics and companies with services to engineer biology at a scale beyond manual methods.</p>
     </div>
     <div class="col-lg-6 order-lg-1 align-self-center d-grid position-relative">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="300px" filter="blur(8px)"
-             class="position-absolute" style="top: -80px; left: -80px; z-index: 1;">
-            <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" style="stop-color: #00e5fe;"></stop>
-                    <stop offset="100%" style="stop-color: #0071c5;"></stop>
-                </linearGradient>
-            </defs>
-            <path id="blob" fill="url(#gradient)" style="opacity: 1;">
-                <animate attributeName="d" dur="25s" repeatCount="indefinite"
-                    values="M409.06419,322.5266Q395.0532,395.0532,322.5266,445.11739Q250,495.18159,163.51944,459.07135Q77.03888,422.96112,82.39949,336.48056Q87.7601,250,115.64271,196.76266Q143.52532,143.52532,196.76266,76.83657Q250,10.14783,323.24578,56.82813Q396.49156,103.50844,409.78338,176.75422Q423.07519,250,409.06419,322.5266Z;M408.24461,332.63257Q415.26513,415.26513,332.63257,434.71568Q250,454.16622,179.33614,422.74697Q108.67228,391.32772,65.87585,320.66386Q23.07942,250,63.27221,176.73251Q103.46501,103.46501,176.73251,63.02288Q250,22.58075,311.86507,74.4253Q373.73015,126.26985,387.47712,188.13493Q401.22409,250,408.24461,332.63257Z;M423.42552,332.41134Q414.82268,414.82268,332.41134,424.30554Q250,433.78841,170.96572,420.92848Q91.93144,408.06856,46.07152,329.03428Q0.21159,250,66.88003,191.77423Q133.54846,133.54846,191.77423,102.82861Q250,72.10876,305.00592,106.04846Q360.01185,139.98815,396.0201,194.99408Q432.02836,250,423.42552,332.41134Z;M405.0078,325.44624Q400.89248,400.89248,325.44624,434.97549Q250,469.0585,165.42535,444.1039Q80.8507,419.1493,84.75627,334.57465Q88.66184,250,94.44262,175.1117Q100.2234,100.2234,175.1117,82.29749Q250,64.37159,306.73538,100.45042Q363.47075,136.52925,386.29693,193.26462Q409.12312,250,405.0078,325.44624Z;M449.05134,329.9003Q409.80059,409.80059,329.9003,451.15995Q250,492.5193,162.89881,458.36084Q75.79762,424.20238,65.04837,337.10119Q54.29911,250,85.74629,183.59673Q117.19347,117.19347,183.59673,88.1905Q250,59.18753,328.8549,75.73886Q407.7098,92.2902,448.00594,171.1451Q488.30208,250,449.05134,329.9003Z;M409.06419,322.5266Q395.0532,395.0532,322.5266,445.11739Q250,495.18159,163.51944,459.07135Q77.03888,422.96112,82.39949,336.48056Q87.7601,250,115.64271,196.76266Q143.52532,143.52532,196.76266,76.83657Q250,10.14783,323.24578,56.82813Q396.49156,103.50844,409.78338,176.75422Q423.07519,250,409.06419,322.5266Z">
-                </animate>
-            </path>
-        </svg>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="150px" filter="blur(8px)"
-        class="position-absolute" style="bottom: -10px; right: -10px; z-index: 1;">
-            <defs>
-                <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" style="stop-color: #00d3c9;"></stop>
-                    <stop offset="100%" style="stop-color: #00958a;"></stop>
-                </linearGradient>
-            </defs>
-            <path id="blob" fill="url(#gradient2)" style="opacity: 1;">
-                <animate attributeName="d" dur="25s" repeatCount="indefinite"
-                    values="M409.06419,322.5266Q395.0532,395.0532,322.5266,445.11739Q250,495.18159,163.51944,459.07135Q77.03888,422.96112,82.39949,336.48056Q87.7601,250,115.64271,196.76266Q143.52532,143.52532,196.76266,76.83657Q250,10.14783,323.24578,56.82813Q396.49156,103.50844,409.78338,176.75422Q423.07519,250,409.06419,322.5266Z;M408.24461,332.63257Q415.26513,415.26513,332.63257,434.71568Q250,454.16622,179.33614,422.74697Q108.67228,391.32772,65.87585,320.66386Q23.07942,250,63.27221,176.73251Q103.46501,103.46501,176.73251,63.02288Q250,22.58075,311.86507,74.4253Q373.73015,126.26985,387.47712,188.13493Q401.22409,250,408.24461,332.63257Z;M423.42552,332.41134Q414.82268,414.82268,332.41134,424.30554Q250,433.78841,170.96572,420.92848Q91.93144,408.06856,46.07152,329.03428Q0.21159,250,66.88003,191.77423Q133.54846,133.54846,191.77423,102.82861Q250,72.10876,305.00592,106.04846Q360.01185,139.98815,396.0201,194.99408Q432.02836,250,423.42552,332.41134Z;M405.0078,325.44624Q400.89248,400.89248,325.44624,434.97549Q250,469.0585,165.42535,444.1039Q80.8507,419.1493,84.75627,334.57465Q88.66184,250,94.44262,175.1117Q100.2234,100.2234,175.1117,82.29749Q250,64.37159,306.73538,100.45042Q363.47075,136.52925,386.29693,193.26462Q409.12312,250,405.0078,325.44624Z;M449.05134,329.9003Q409.80059,409.80059,329.9003,451.15995Q250,492.5193,162.89881,458.36084Q75.79762,424.20238,65.04837,337.10119Q54.29911,250,85.74629,183.59673Q117.19347,117.19347,183.59673,88.1905Q250,59.18753,328.8549,75.73886Q407.7098,92.2902,448.00594,171.1451Q488.30208,250,449.05134,329.9003Z;M409.06419,322.5266Q395.0532,395.0532,322.5266,445.11739Q250,495.18159,163.51944,459.07135Q77.03888,422.96112,82.39949,336.48056Q87.7601,250,115.64271,196.76266Q143.52532,143.52532,196.76266,76.83657Q250,10.14783,323.24578,56.82813Q396.49156,103.50844,409.78338,176.75422Q423.07519,250,409.06419,322.5266Z">
-                </animate>
-            </path>
-        </svg>
+        <div class="position-absolute" style="top: -80px; left: -80px; z-index: 1; filter:blur(8px);">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="300px">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color: #00e5fe;"></stop>
+                        <stop offset="100%" style="stop-color: #0071c5;"></stop>
+                    </linearGradient>
+                </defs>
+                <path id="blob" fill="url(#gradient)" style="opacity: 1;">
+                    <animate attributeName="d" dur="25s" repeatCount="indefinite"
+                        values="M409.06419,322.5266Q395.0532,395.0532,322.5266,445.11739Q250,495.18159,163.51944,459.07135Q77.03888,422.96112,82.39949,336.48056Q87.7601,250,115.64271,196.76266Q143.52532,143.52532,196.76266,76.83657Q250,10.14783,323.24578,56.82813Q396.49156,103.50844,409.78338,176.75422Q423.07519,250,409.06419,322.5266Z;M408.24461,332.63257Q415.26513,415.26513,332.63257,434.71568Q250,454.16622,179.33614,422.74697Q108.67228,391.32772,65.87585,320.66386Q23.07942,250,63.27221,176.73251Q103.46501,103.46501,176.73251,63.02288Q250,22.58075,311.86507,74.4253Q373.73015,126.26985,387.47712,188.13493Q401.22409,250,408.24461,332.63257Z;M423.42552,332.41134Q414.82268,414.82268,332.41134,424.30554Q250,433.78841,170.96572,420.92848Q91.93144,408.06856,46.07152,329.03428Q0.21159,250,66.88003,191.77423Q133.54846,133.54846,191.77423,102.82861Q250,72.10876,305.00592,106.04846Q360.01185,139.98815,396.0201,194.99408Q432.02836,250,423.42552,332.41134Z;M405.0078,325.44624Q400.89248,400.89248,325.44624,434.97549Q250,469.0585,165.42535,444.1039Q80.8507,419.1493,84.75627,334.57465Q88.66184,250,94.44262,175.1117Q100.2234,100.2234,175.1117,82.29749Q250,64.37159,306.73538,100.45042Q363.47075,136.52925,386.29693,193.26462Q409.12312,250,405.0078,325.44624Z;M449.05134,329.9003Q409.80059,409.80059,329.9003,451.15995Q250,492.5193,162.89881,458.36084Q75.79762,424.20238,65.04837,337.10119Q54.29911,250,85.74629,183.59673Q117.19347,117.19347,183.59673,88.1905Q250,59.18753,328.8549,75.73886Q407.7098,92.2902,448.00594,171.1451Q488.30208,250,449.05134,329.9003Z;M409.06419,322.5266Q395.0532,395.0532,322.5266,445.11739Q250,495.18159,163.51944,459.07135Q77.03888,422.96112,82.39949,336.48056Q87.7601,250,115.64271,196.76266Q143.52532,143.52532,196.76266,76.83657Q250,10.14783,323.24578,56.82813Q396.49156,103.50844,409.78338,176.75422Q423.07519,250,409.06419,322.5266Z">
+                    </animate>
+                </path>
+            </svg>
+        </div>
+        <div class="position-absolute" style="bottom: -10px; right: -10px; z-index: 1; filter:blur(8px);">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="150px">
+                <defs>
+                    <linearGradient id="gradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color: #00d3c9;"></stop>
+                        <stop offset="100%" style="stop-color: #00958a;"></stop>
+                    </linearGradient>
+                </defs>
+                <path id="blob" fill="url(#gradient2)" style="opacity: 1;">
+                    <animate attributeName="d" dur="25s" repeatCount="indefinite"
+                        values="M409.06419,322.5266Q395.0532,395.0532,322.5266,445.11739Q250,495.18159,163.51944,459.07135Q77.03888,422.96112,82.39949,336.48056Q87.7601,250,115.64271,196.76266Q143.52532,143.52532,196.76266,76.83657Q250,10.14783,323.24578,56.82813Q396.49156,103.50844,409.78338,176.75422Q423.07519,250,409.06419,322.5266Z;M408.24461,332.63257Q415.26513,415.26513,332.63257,434.71568Q250,454.16622,179.33614,422.74697Q108.67228,391.32772,65.87585,320.66386Q23.07942,250,63.27221,176.73251Q103.46501,103.46501,176.73251,63.02288Q250,22.58075,311.86507,74.4253Q373.73015,126.26985,387.47712,188.13493Q401.22409,250,408.24461,332.63257Z;M423.42552,332.41134Q414.82268,414.82268,332.41134,424.30554Q250,433.78841,170.96572,420.92848Q91.93144,408.06856,46.07152,329.03428Q0.21159,250,66.88003,191.77423Q133.54846,133.54846,191.77423,102.82861Q250,72.10876,305.00592,106.04846Q360.01185,139.98815,396.0201,194.99408Q432.02836,250,423.42552,332.41134Z;M405.0078,325.44624Q400.89248,400.89248,325.44624,434.97549Q250,469.0585,165.42535,444.1039Q80.8507,419.1493,84.75627,334.57465Q88.66184,250,94.44262,175.1117Q100.2234,100.2234,175.1117,82.29749Q250,64.37159,306.73538,100.45042Q363.47075,136.52925,386.29693,193.26462Q409.12312,250,405.0078,325.44624Z;M449.05134,329.9003Q409.80059,409.80059,329.9003,451.15995Q250,492.5193,162.89881,458.36084Q75.79762,424.20238,65.04837,337.10119Q54.29911,250,85.74629,183.59673Q117.19347,117.19347,183.59673,88.1905Q250,59.18753,328.8549,75.73886Q407.7098,92.2902,448.00594,171.1451Q488.30208,250,449.05134,329.9003Z;M409.06419,322.5266Q395.0532,395.0532,322.5266,445.11739Q250,495.18159,163.51944,459.07135Q77.03888,422.96112,82.39949,336.48056Q87.7601,250,115.64271,196.76266Q143.52532,143.52532,196.76266,76.83657Q250,10.14783,323.24578,56.82813Q396.49156,103.50844,409.78338,176.75422Q423.07519,250,409.06419,322.5266Z">
+                    </animate>
+                </path>
+            </svg>
+        </div>
         <!-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="55%"
             style="grid-column: 1; grid-row: 1; z-index: 1; transform: scaleX(3.2) scaleY(3) translateX(50px) translateY(-20px)">
             <defs>
@@ -226,7 +240,8 @@ must include a name as parameter and a boolean light to indicate color -->
                 d="M53.8,-32.2C61.4,-18,53.4,4.1,41.8,23.3C30.3,42.5,15.1,58.8,-5.5,62C-26.2,65.2,-52.4,55.3,-64.9,35.6C-77.4,15.8,-76.2,-13.8,-63.1,-31.2C-50,-48.7,-25,-54,-0.9,-53.4C23.1,-52.9,46.2,-46.5,53.8,-32.2Z"
                 transform="translate(100 100)" />
         </svg> -->
-        <div class="row shadow-primary text-white p-4 rounded-bottom-end mx-3" style="z-index:2; background-color: #19201f;">
+        <div class="row shadow-primary text-white p-4 rounded-bottom-end mx-3"
+            style="z-index:2; background-color: #19201f;">
             
             <div class="col-xxl-6 p-4">
                 <h3><span class="icon-circle-primary-dark me-3">
@@ -666,34 +681,37 @@ must include a name as parameter and a boolean light to indicate color -->
 </div>
 <div class="accordion accordion-flush" id="accordionFlushAssembly">
     <div class="position-relative d-grid">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500px" filter="blur(8px)"
-            class="position-absolute" style="top: -130px; right: -130px; z-index: 1;">
-            <defs>
-                <linearGradient id="gradient4" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" style="stop-color: #e7cb9e;"></stop>
-                    <stop offset="100%" style="stop-color: #b18c62;"></stop>
-                </linearGradient>
-            </defs>
-            <path id="blob" fill="url(#gradient4)" style="opacity: 1;">
-                <animate attributeName="d" dur="25s" repeatCount="indefinite"
-                    values="M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z;M403.5,294Q372,338,343,393Q314,448,254,435.5Q194,423,138,397.5Q82,372,88,311Q94,250,86,187.5Q78,125,134,95.5Q190,66,253,57Q316,48,362,91.5Q408,135,421.5,192.5Q435,250,403.5,294Z;M410.95278,296.31131Q377.83016,342.62262,346.59668,396.40799Q315.3632,450.19336,253.66275,438.70512Q191.9623,427.21687,143.72172,394.79004Q95.48115,362.3632,86.24057,306.1816Q77,250,74.51885,185.3632Q72.0377,120.72639,123.0377,68.91975Q174.0377,17.1131,239.88914,47.47163Q305.74057,77.83016,366.40332,99.75233Q427.06607,121.67451,435.57074,185.83725Q444.0754,250,410.95278,296.31131Z;M437.48517,301.93698Q392.82947,353.87396,357.50371,413.21131Q322.17795,472.54867,247.51112,479.51159Q172.8443,486.47452,129.54819,427.64458Q86.25209,368.81464,81.57785,309.40732Q76.90361,250,83.86283,191.93327Q90.82205,133.86654,141.98146,104.152Q193.14087,74.43745,247.01483,83.88926Q300.88878,93.34106,355.51112,113.62234Q410.13346,133.90361,446.13717,191.95181Q482.14087,250,437.48517,301.93698Z;M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z">
-                </animate>
-            </path>
-        </svg>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="300px" filter="blur(8px)"
-            class="position-absolute" style="bottom: -30px; left: -100px; z-index: 1;">
-            <defs>
-                <linearGradient id="gradient5" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" style="stop-color: #e7cb9e;"></stop>
-                    <stop offset="100%" style="stop-color: #d00050;"></stop>
-                </linearGradient>
-            </defs>
-            <path id="blob" fill="url(#gradient5)" style="opacity: 1;">
-                <animate attributeName="d" dur="25s" repeatCount="indefinite"
-                    values="M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z;M403.5,294Q372,338,343,393Q314,448,254,435.5Q194,423,138,397.5Q82,372,88,311Q94,250,86,187.5Q78,125,134,95.5Q190,66,253,57Q316,48,362,91.5Q408,135,421.5,192.5Q435,250,403.5,294Z;M410.95278,296.31131Q377.83016,342.62262,346.59668,396.40799Q315.3632,450.19336,253.66275,438.70512Q191.9623,427.21687,143.72172,394.79004Q95.48115,362.3632,86.24057,306.1816Q77,250,74.51885,185.3632Q72.0377,120.72639,123.0377,68.91975Q174.0377,17.1131,239.88914,47.47163Q305.74057,77.83016,366.40332,99.75233Q427.06607,121.67451,435.57074,185.83725Q444.0754,250,410.95278,296.31131Z;M437.48517,301.93698Q392.82947,353.87396,357.50371,413.21131Q322.17795,472.54867,247.51112,479.51159Q172.8443,486.47452,129.54819,427.64458Q86.25209,368.81464,81.57785,309.40732Q76.90361,250,83.86283,191.93327Q90.82205,133.86654,141.98146,104.152Q193.14087,74.43745,247.01483,83.88926Q300.88878,93.34106,355.51112,113.62234Q410.13346,133.90361,446.13717,191.95181Q482.14087,250,437.48517,301.93698Z;M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z">
-                </animate>
-            </path>
-        </svg>
+        <div class="position-absolute" style="top: -130px; right: -130px; z-index: 1; filter:blur(8px);">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500px"
+                filter="blur(8px)">
+                <defs>
+                    <linearGradient id="gradient4" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color: #e7cb9e;"></stop>
+                        <stop offset="100%" style="stop-color: #b18c62;"></stop>
+                    </linearGradient>
+                </defs>
+                <path id="blob" fill="url(#gradient4)" style="opacity: 1;">
+                    <animate attributeName="d" dur="25s" repeatCount="indefinite"
+                        values="M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z;M403.5,294Q372,338,343,393Q314,448,254,435.5Q194,423,138,397.5Q82,372,88,311Q94,250,86,187.5Q78,125,134,95.5Q190,66,253,57Q316,48,362,91.5Q408,135,421.5,192.5Q435,250,403.5,294Z;M410.95278,296.31131Q377.83016,342.62262,346.59668,396.40799Q315.3632,450.19336,253.66275,438.70512Q191.9623,427.21687,143.72172,394.79004Q95.48115,362.3632,86.24057,306.1816Q77,250,74.51885,185.3632Q72.0377,120.72639,123.0377,68.91975Q174.0377,17.1131,239.88914,47.47163Q305.74057,77.83016,366.40332,99.75233Q427.06607,121.67451,435.57074,185.83725Q444.0754,250,410.95278,296.31131Z;M437.48517,301.93698Q392.82947,353.87396,357.50371,413.21131Q322.17795,472.54867,247.51112,479.51159Q172.8443,486.47452,129.54819,427.64458Q86.25209,368.81464,81.57785,309.40732Q76.90361,250,83.86283,191.93327Q90.82205,133.86654,141.98146,104.152Q193.14087,74.43745,247.01483,83.88926Q300.88878,93.34106,355.51112,113.62234Q410.13346,133.90361,446.13717,191.95181Q482.14087,250,437.48517,301.93698Z;M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z">
+                    </animate>
+                </path>
+            </svg>
+        </div>
+        <div class="position-absolute" style="bottom: -30px; left: -100px; z-index: 1; filter:blur(8px);">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="300px">
+                <defs>
+                    <linearGradient id="gradient5" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color: #e7cb9e;"></stop>
+                        <stop offset="100%" style="stop-color: #d00050;"></stop>
+                    </linearGradient>
+                </defs>
+                <path id="blob" fill="url(#gradient5)" style="opacity: 1;">
+                    <animate attributeName="d" dur="25s" repeatCount="indefinite"
+                        values="M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z;M403.5,294Q372,338,343,393Q314,448,254,435.5Q194,423,138,397.5Q82,372,88,311Q94,250,86,187.5Q78,125,134,95.5Q190,66,253,57Q316,48,362,91.5Q408,135,421.5,192.5Q435,250,403.5,294Z;M410.95278,296.31131Q377.83016,342.62262,346.59668,396.40799Q315.3632,450.19336,253.66275,438.70512Q191.9623,427.21687,143.72172,394.79004Q95.48115,362.3632,86.24057,306.1816Q77,250,74.51885,185.3632Q72.0377,120.72639,123.0377,68.91975Q174.0377,17.1131,239.88914,47.47163Q305.74057,77.83016,366.40332,99.75233Q427.06607,121.67451,435.57074,185.83725Q444.0754,250,410.95278,296.31131Z;M437.48517,301.93698Q392.82947,353.87396,357.50371,413.21131Q322.17795,472.54867,247.51112,479.51159Q172.8443,486.47452,129.54819,427.64458Q86.25209,368.81464,81.57785,309.40732Q76.90361,250,83.86283,191.93327Q90.82205,133.86654,141.98146,104.152Q193.14087,74.43745,247.01483,83.88926Q300.88878,93.34106,355.51112,113.62234Q410.13346,133.90361,446.13717,191.95181Q482.14087,250,437.48517,301.93698Z;M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z">
+                    </animate>
+                </path>
+            </svg>
+        </div>
         <div style="z-index:2" class="row">
             
             <div class="col-xxl-3 col-md-6 mb-5" style="height: 440px;">
@@ -704,8 +722,8 @@ must include a name as parameter and a boolean light to indicate color -->
                             <div class=" accordion-item rounded-bottom-end">
                                 <div class="accordion-header " id="headingAssembly">
                                     <button class="accordion-button rounded-bottom-end collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseAssembly" aria-expanded="false"
-                                        aria-controls="collapseAssembly">
+                                        data-bs-toggle="collapse" data-bs-target="#collapseAssembly"
+                                        aria-expanded="false" aria-controls="collapseAssembly">
                                         <h3 id="scrollspyAssembly" class="me-5">High-Throughput DNA Assembly</h3>
                                     </button>
                                 </div>
@@ -737,8 +755,8 @@ must include a name as parameter and a boolean light to indicate color -->
                             <div class=" accordion-item rounded-bottom-end">
                                 <div class="accordion-header " id="headingMicrobial">
                                     <button class="accordion-button rounded-bottom-end collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseMicrobial" aria-expanded="false"
-                                        aria-controls="collapseMicrobial">
+                                        data-bs-toggle="collapse" data-bs-target="#collapseMicrobial"
+                                        aria-expanded="false" aria-controls="collapseMicrobial">
                                         <h3 id="scrollspyMicrobial" class="me-5">Microbial Engineering</h3>
                                     </button>
                                 </div>
@@ -770,8 +788,8 @@ must include a name as parameter and a boolean light to indicate color -->
                             <div class=" accordion-item rounded-bottom-end">
                                 <div class="accordion-header " id="headingMammalian">
                                     <button class="accordion-button rounded-bottom-end collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseMammalian" aria-expanded="false"
-                                        aria-controls="collapseMammalian">
+                                        data-bs-toggle="collapse" data-bs-target="#collapseMammalian"
+                                        aria-expanded="false" aria-controls="collapseMammalian">
                                         <h3 id="scrollspyMammalian" class="me-5">Mammalian Cell Engineering</h3>
                                     </button>
                                 </div>
@@ -803,8 +821,8 @@ must include a name as parameter and a boolean light to indicate color -->
                             <div class=" accordion-item rounded-bottom-end">
                                 <div class="accordion-header " id="headingScreening">
                                     <button class="accordion-button rounded-bottom-end collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseScreening" aria-expanded="false"
-                                        aria-controls="collapseScreening">
+                                        data-bs-toggle="collapse" data-bs-target="#collapseScreening"
+                                        aria-expanded="false" aria-controls="collapseScreening">
                                         <h3 id="scrollspyScreening" class="me-5">High-Throughput Screening</h3>
                                     </button>
                                 </div>
@@ -856,28 +874,29 @@ be careful, heading and subheading are sensitive to line breaks -->
 
 
 <p class="display-3 mb-3 ">High Quality Synthetic DNA from a Canadian Supplier</p>
-<p class="lead mb-5 fs-4 text-black-50"> <br />
+<p class="lead mb-5 fs-4 text-black-50"><br />
         All Genome Foundry users and laboratories belonging to the Concordia University Centre for Applied Synthetic Biology receive significant discounts on gene synthesis, provided by <a href="https://www.ranomics.com/" target="_blank">Ranomics</a>.<br />
         </p>
     </div>
     <div class="col-lg-5 position-relative d-grid">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500px" filter="blur(8px)"
-            class="position-absolute" style="bottom: -50px; right: -80px; z-index: 1;">
-            <defs>
-                <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" style="stop-color: #00d2c8;"></stop>
-                    <stop offset="100%" style="stop-color: #0071c5;"></stop>
-                </linearGradient>
-            </defs>
-            <path id="blob" fill="url(#gradient3)" style="opacity: 1;">
-                <animate attributeName="d" dur="25s" repeatCount="indefinite"
-                    values="M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z;M403.5,294Q372,338,343,393Q314,448,254,435.5Q194,423,138,397.5Q82,372,88,311Q94,250,86,187.5Q78,125,134,95.5Q190,66,253,57Q316,48,362,91.5Q408,135,421.5,192.5Q435,250,403.5,294Z;M410.95278,296.31131Q377.83016,342.62262,346.59668,396.40799Q315.3632,450.19336,253.66275,438.70512Q191.9623,427.21687,143.72172,394.79004Q95.48115,362.3632,86.24057,306.1816Q77,250,74.51885,185.3632Q72.0377,120.72639,123.0377,68.91975Q174.0377,17.1131,239.88914,47.47163Q305.74057,77.83016,366.40332,99.75233Q427.06607,121.67451,435.57074,185.83725Q444.0754,250,410.95278,296.31131Z;M437.48517,301.93698Q392.82947,353.87396,357.50371,413.21131Q322.17795,472.54867,247.51112,479.51159Q172.8443,486.47452,129.54819,427.64458Q86.25209,368.81464,81.57785,309.40732Q76.90361,250,83.86283,191.93327Q90.82205,133.86654,141.98146,104.152Q193.14087,74.43745,247.01483,83.88926Q300.88878,93.34106,355.51112,113.62234Q410.13346,133.90361,446.13717,191.95181Q482.14087,250,437.48517,301.93698Z;M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z">
-                </animate>
-            </path>
-        </svg>
+        <div class="position-absolute" style="bottom: -50px; right: -80px; z-index: 1; filter:blur(8px);">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500px">
+                <defs>
+                    <linearGradient id="gradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color: #00d2c8;"></stop>
+                        <stop offset="100%" style="stop-color: #0071c5;"></stop>
+                    </linearGradient>
+                </defs>
+                <path id="blob" fill="url(#gradient3)" style="opacity: 1;">
+                    <animate attributeName="d" dur="25s" repeatCount="indefinite"
+                        values="M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z;M403.5,294Q372,338,343,393Q314,448,254,435.5Q194,423,138,397.5Q82,372,88,311Q94,250,86,187.5Q78,125,134,95.5Q190,66,253,57Q316,48,362,91.5Q408,135,421.5,192.5Q435,250,403.5,294Z;M410.95278,296.31131Q377.83016,342.62262,346.59668,396.40799Q315.3632,450.19336,253.66275,438.70512Q191.9623,427.21687,143.72172,394.79004Q95.48115,362.3632,86.24057,306.1816Q77,250,74.51885,185.3632Q72.0377,120.72639,123.0377,68.91975Q174.0377,17.1131,239.88914,47.47163Q305.74057,77.83016,366.40332,99.75233Q427.06607,121.67451,435.57074,185.83725Q444.0754,250,410.95278,296.31131Z;M437.48517,301.93698Q392.82947,353.87396,357.50371,413.21131Q322.17795,472.54867,247.51112,479.51159Q172.8443,486.47452,129.54819,427.64458Q86.25209,368.81464,81.57785,309.40732Q76.90361,250,83.86283,191.93327Q90.82205,133.86654,141.98146,104.152Q193.14087,74.43745,247.01483,83.88926Q300.88878,93.34106,355.51112,113.62234Q410.13346,133.90361,446.13717,191.95181Q482.14087,250,437.48517,301.93698Z;M428.88107,298.41731Q382.87896,346.83463,343.6411,381.94757Q304.40324,417.06052,249.73188,417.66327Q195.06052,418.26602,121.90324,407.33463Q48.74595,396.40324,42.90922,323.20162Q37.07249,250,50.04223,182.03624Q63.01197,114.07249,129.2076,98.49191Q195.40324,82.91133,251.0746,78.83673Q306.74595,74.76214,356.50598,105.64321Q406.26602,136.52427,440.5746,193.26214Q474.88318,250,428.88107,298.41731Z">
+                    </animate>
+                </path>
+            </svg>
+        </div>
         <div style="z-index:2">
-        
-        <!-- 
+            
+                <!-- 
 discount card
 
 a card layout to indicate discounts and additional info in list
@@ -921,8 +940,8 @@ must include id, discount, product, product_link (optional), and a list of detai
         </div>
     </div>
 </div>
-        
-        <!-- 
+            
+                <!-- 
 discount card
 
 a card layout to indicate discounts and additional info in list
@@ -970,7 +989,7 @@ must include id, discount, product, product_link (optional), and a list of detai
         </div>
     </div>
 </div>
-        
+            
         </div>
     </div>
 </div>
@@ -1010,7 +1029,7 @@ possibility to make image size a variable in the future-->
 
 <div class="m-4 p-4" style="width: 300px">
     <div class="d-grid h-100">
-        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(-10px); z-index:0;" style="width: 230px;">
+        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(15px); z-index:0; width: 230px;">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" filter="blur(3px)">
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style="stop-color: rgb(3, 210, 202);"></stop>
@@ -1021,24 +1040,25 @@ possibility to make image size a variable in the future-->
                     transform="translate(100 100)" />
             </svg>
         </div>
-        <div class="position-relative" style="width: 230px; height: 230px; grid-column: 1; grid-row: 1; z-index:2;">
-            <img src="assets\images\team\Kevin.png" height="230px" alt="photo of Kevin Jacquet (PhD)"
-                style="grid-column: 1; grid-row: 1; z-index: 1;">
-            
-            <div class="position-absolute bottom-0 end-0" style="z-index: 2; transform: translateX(10px);">
+        <div class="p-3 shadow-primary rounded-bottom-end"
+            style="grid-column: 1; grid-row: 1; z-index:1; background-color: #19201f;">
+            <div class="position-relative">
+                <img src="assets\images\team\Kevin.png" height="230px" alt="photo of Kevin Jacquet (PhD)"
+                    style="grid-column: 1; grid-row: 1; z-index: 1;">
                 
-                <a href="https://www.linkedin.com/in/kevin-jacquet-ph-d-0a8a52b6/" target="_blank">
-                    <button type="button" class="btn btn-primary rounded-pill">
-                        <i class="bi bi-linkedin"></i>
-                        <span class="visually-hidden">LinkedIn</span>
-                    </button>
-                </a>
-                
+                <div class="position-absolute bottom-0 end-0" style="z-index: 2;">
+                    
+                    <a href="https://www.linkedin.com/in/kevin-jacquet-ph-d-0a8a52b6/" target="_blank">
+                        <button type="button" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-linkedin"></i>
+                            <span class="visually-hidden">LinkedIn</span>
+                        </button>
+                    </a>
+                    
+                    
+                </div>
                 
             </div>
-            
-        </div>
-        <div class="px-3 pb-3 shadow-primary rounded-bottom-end" style="z-index:1; background-color: #19201f; padding-top: 80px; margin-top: -80px;">
             <h3 class="text-white pt-3 fs-4">Kevin Jacquet (PhD)</h3>
             <p class="text-muted mb-0">Platform Coordinator</p>
         </div>
@@ -1055,7 +1075,7 @@ possibility to make image size a variable in the future-->
 
 <div class="m-4 p-4" style="width: 300px">
     <div class="d-grid h-100">
-        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(-10px); z-index:0;" style="width: 230px;">
+        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(15px); z-index:0; width: 230px;">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" filter="blur(3px)">
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style="stop-color: rgb(3, 210, 202);"></stop>
@@ -1066,12 +1086,13 @@ possibility to make image size a variable in the future-->
                     transform="translate(100 100)" />
             </svg>
         </div>
-        <div class="position-relative" style="width: 230px; height: 230px; grid-column: 1; grid-row: 1; z-index:2;">
-            <img src="assets\images\team\Nicholas.png" height="230px" alt="photo of Nicholas Gold (MSc)"
-                style="grid-column: 1; grid-row: 1; z-index: 1;">
-            
-        </div>
-        <div class="px-3 pb-3 shadow-primary rounded-bottom-end" style="z-index:1; background-color: #19201f; padding-top: 80px; margin-top: -80px;">
+        <div class="p-3 shadow-primary rounded-bottom-end"
+            style="grid-column: 1; grid-row: 1; z-index:1; background-color: #19201f;">
+            <div class="position-relative">
+                <img src="assets\images\team\Nicholas.png" height="230px" alt="photo of Nicholas Gold (MSc)"
+                    style="grid-column: 1; grid-row: 1; z-index: 1;">
+                
+            </div>
             <h3 class="text-white pt-3 fs-4">Nicholas Gold (MSc)</h3>
             <p class="text-muted mb-0">Platform Coordinator</p>
         </div>
@@ -1088,7 +1109,7 @@ possibility to make image size a variable in the future-->
 
 <div class="m-4 p-4" style="width: 300px">
     <div class="d-grid h-100">
-        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(-10px); z-index:0;" style="width: 230px;">
+        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(15px); z-index:0; width: 230px;">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" filter="blur(3px)">
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style="stop-color: rgb(3, 210, 202);"></stop>
@@ -1099,24 +1120,25 @@ possibility to make image size a variable in the future-->
                     transform="translate(100 100)" />
             </svg>
         </div>
-        <div class="position-relative" style="width: 230px; height: 230px; grid-column: 1; grid-row: 1; z-index:2;">
-            <img src="assets\images\team\Angela.png" height="230px" alt="photo of Angela Quach (MSc)"
-                style="grid-column: 1; grid-row: 1; z-index: 1;">
-            
-            <div class="position-absolute bottom-0 end-0" style="z-index: 2; transform: translateX(10px);">
+        <div class="p-3 shadow-primary rounded-bottom-end"
+            style="grid-column: 1; grid-row: 1; z-index:1; background-color: #19201f;">
+            <div class="position-relative">
+                <img src="assets\images\team\Angela.png" height="230px" alt="photo of Angela Quach (MSc)"
+                    style="grid-column: 1; grid-row: 1; z-index: 1;">
                 
-                <a href="https://www.linkedin.com/in/angela-quach-6648a4189" target="_blank">
-                    <button type="button" class="btn btn-primary rounded-pill">
-                        <i class="bi bi-linkedin"></i>
-                        <span class="visually-hidden">LinkedIn</span>
-                    </button>
-                </a>
-                
+                <div class="position-absolute bottom-0 end-0" style="z-index: 2;">
+                    
+                    <a href="https://www.linkedin.com/in/angela-quach-6648a4189" target="_blank">
+                        <button type="button" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-linkedin"></i>
+                            <span class="visually-hidden">LinkedIn</span>
+                        </button>
+                    </a>
+                    
+                    
+                </div>
                 
             </div>
-            
-        </div>
-        <div class="px-3 pb-3 shadow-primary rounded-bottom-end" style="z-index:1; background-color: #19201f; padding-top: 80px; margin-top: -80px;">
             <h3 class="text-white pt-3 fs-4">Angela Quach (MSc)</h3>
             <p class="text-muted mb-0">Cell Editing Specialist</p>
         </div>
@@ -1133,7 +1155,7 @@ possibility to make image size a variable in the future-->
 
 <div class="m-4 p-4" style="width: 300px">
     <div class="d-grid h-100">
-        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(-10px); z-index:0;" style="width: 230px;">
+        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(15px); z-index:0; width: 230px;">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" filter="blur(3px)">
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style="stop-color: rgb(3, 210, 202);"></stop>
@@ -1144,31 +1166,32 @@ possibility to make image size a variable in the future-->
                     transform="translate(100 100)" />
             </svg>
         </div>
-        <div class="position-relative" style="width: 230px; height: 230px; grid-column: 1; grid-row: 1; z-index:2;">
-            <img src="assets\images\team\James.png" height="230px" alt="photo of James Bagley (MSc)"
-                style="grid-column: 1; grid-row: 1; z-index: 1;">
-            
-            <div class="position-absolute bottom-0 end-0" style="z-index: 2; transform: translateX(10px);">
+        <div class="p-3 shadow-primary rounded-bottom-end"
+            style="grid-column: 1; grid-row: 1; z-index:1; background-color: #19201f;">
+            <div class="position-relative">
+                <img src="assets\images\team\James.png" height="230px" alt="photo of James Bagley (MSc)"
+                    style="grid-column: 1; grid-row: 1; z-index: 1;">
                 
-                <a href="https://www.linkedin.com/in/james-bagley-410228aa" target="_blank">
-                    <button type="button" class="btn btn-primary rounded-pill">
-                        <i class="bi bi-linkedin"></i>
-                        <span class="visually-hidden">LinkedIn</span>
-                    </button>
-                </a>
-                
-                
-                <a href="https://github.com/JamesBagley" target="_blank">
-                    <button type="button" class="btn btn-primary rounded-pill">
-                        <i class="bi bi-github"></i>
-                        <span class="visually-hidden">Github</span>
-                    </button>
-                </a>
+                <div class="position-absolute bottom-0 end-0" style="z-index: 2;">
+                    
+                    <a href="https://www.linkedin.com/in/james-bagley-410228aa" target="_blank">
+                        <button type="button" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-linkedin"></i>
+                            <span class="visually-hidden">LinkedIn</span>
+                        </button>
+                    </a>
+                    
+                    
+                    <a href="https://github.com/JamesBagley" target="_blank">
+                        <button type="button" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-github"></i>
+                            <span class="visually-hidden">Github</span>
+                        </button>
+                    </a>
+                    
+                </div>
                 
             </div>
-            
-        </div>
-        <div class="px-3 pb-3 shadow-primary rounded-bottom-end" style="z-index:1; background-color: #19201f; padding-top: 80px; margin-top: -80px;">
             <h3 class="text-white pt-3 fs-4">James Bagley (MSc)</h3>
             <p class="text-muted mb-0">Lab Automation Specialist</p>
         </div>
@@ -1185,7 +1208,7 @@ possibility to make image size a variable in the future-->
 
 <div class="m-4 p-4" style="width: 300px">
     <div class="d-grid h-100">
-        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(-10px); z-index:0;" style="width: 230px;">
+        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(15px); z-index:0; width: 230px;">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" filter="blur(3px)">
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style="stop-color: rgb(3, 210, 202);"></stop>
@@ -1196,24 +1219,25 @@ possibility to make image size a variable in the future-->
                     transform="translate(100 100)" />
             </svg>
         </div>
-        <div class="position-relative" style="width: 230px; height: 230px; grid-column: 1; grid-row: 1; z-index:2;">
-            <img src="assets\images\team\Audrey.png" height="230px" alt="photo of Audrey Morin (MSc)"
-                style="grid-column: 1; grid-row: 1; z-index: 1;">
-            
-            <div class="position-absolute bottom-0 end-0" style="z-index: 2; transform: translateX(10px);">
+        <div class="p-3 shadow-primary rounded-bottom-end"
+            style="grid-column: 1; grid-row: 1; z-index:1; background-color: #19201f;">
+            <div class="position-relative">
+                <img src="assets\images\team\Audrey.png" height="230px" alt="photo of Audrey Morin (MSc)"
+                    style="grid-column: 1; grid-row: 1; z-index: 1;">
                 
-                <a href="https://www.linkedin.com/in/audrey-morin-57236489" target="_blank">
-                    <button type="button" class="btn btn-primary rounded-pill">
-                        <i class="bi bi-linkedin"></i>
-                        <span class="visually-hidden">LinkedIn</span>
-                    </button>
-                </a>
-                
+                <div class="position-absolute bottom-0 end-0" style="z-index: 2;">
+                    
+                    <a href="https://www.linkedin.com/in/audrey-morin-57236489" target="_blank">
+                        <button type="button" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-linkedin"></i>
+                            <span class="visually-hidden">LinkedIn</span>
+                        </button>
+                    </a>
+                    
+                    
+                </div>
                 
             </div>
-            
-        </div>
-        <div class="px-3 pb-3 shadow-primary rounded-bottom-end" style="z-index:1; background-color: #19201f; padding-top: 80px; margin-top: -80px;">
             <h3 class="text-white pt-3 fs-4">Audrey Morin (MSc)</h3>
             <p class="text-muted mb-0">Research & Administrative Coordinator</p>
         </div>
@@ -1230,7 +1254,7 @@ possibility to make image size a variable in the future-->
 
 <div class="m-4 p-4" style="width: 300px">
     <div class="d-grid h-100">
-        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(-10px); z-index:0;" style="width: 230px;">
+        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(15px); z-index:0; width: 230px;">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" filter="blur(3px)">
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style="stop-color: rgb(3, 210, 202);"></stop>
@@ -1241,31 +1265,32 @@ possibility to make image size a variable in the future-->
                     transform="translate(100 100)" />
             </svg>
         </div>
-        <div class="position-relative" style="width: 230px; height: 230px; grid-column: 1; grid-row: 1; z-index:2;">
-            <img src="assets\images\team\Flavia.png" height="230px" alt="photo of Flavia Araujo (PhD)"
-                style="grid-column: 1; grid-row: 1; z-index: 1;">
-            
-            <div class="position-absolute bottom-0 end-0" style="z-index: 2; transform: translateX(10px);">
+        <div class="p-3 shadow-primary rounded-bottom-end"
+            style="grid-column: 1; grid-row: 1; z-index:1; background-color: #19201f;">
+            <div class="position-relative">
+                <img src="assets\images\team\Flavia.png" height="230px" alt="photo of Flavia Araujo (PhD)"
+                    style="grid-column: 1; grid-row: 1; z-index: 1;">
                 
-                <a href="https://www.linkedin.com/in/flaviarba" target="_blank">
-                    <button type="button" class="btn btn-primary rounded-pill">
-                        <i class="bi bi-linkedin"></i>
-                        <span class="visually-hidden">LinkedIn</span>
-                    </button>
-                </a>
-                
-                
-                <a href="https://github.com/frba" target="_blank">
-                    <button type="button" class="btn btn-primary rounded-pill">
-                        <i class="bi bi-github"></i>
-                        <span class="visually-hidden">Github</span>
-                    </button>
-                </a>
+                <div class="position-absolute bottom-0 end-0" style="z-index: 2;">
+                    
+                    <a href="https://www.linkedin.com/in/flaviarba" target="_blank">
+                        <button type="button" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-linkedin"></i>
+                            <span class="visually-hidden">LinkedIn</span>
+                        </button>
+                    </a>
+                    
+                    
+                    <a href="https://github.com/frba" target="_blank">
+                        <button type="button" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-github"></i>
+                            <span class="visually-hidden">Github</span>
+                        </button>
+                    </a>
+                    
+                </div>
                 
             </div>
-            
-        </div>
-        <div class="px-3 pb-3 shadow-primary rounded-bottom-end" style="z-index:1; background-color: #19201f; padding-top: 80px; margin-top: -80px;">
             <h3 class="text-white pt-3 fs-4">Flavia Araujo (PhD)</h3>
             <p class="text-muted mb-0">Computer Scientist</p>
         </div>
@@ -1282,7 +1307,7 @@ possibility to make image size a variable in the future-->
 
 <div class="m-4 p-4" style="width: 300px">
     <div class="d-grid h-100">
-        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(-10px); z-index:0;" style="width: 230px;">
+        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(15px); z-index:0; width: 230px;">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" filter="blur(3px)">
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style="stop-color: rgb(3, 210, 202);"></stop>
@@ -1293,24 +1318,25 @@ possibility to make image size a variable in the future-->
                     transform="translate(100 100)" />
             </svg>
         </div>
-        <div class="position-relative" style="width: 230px; height: 230px; grid-column: 1; grid-row: 1; z-index:2;">
-            <img src="assets\images\team\Benjamin.png" height="230px" alt="photo of Benjamin Scott (PhD)"
-                style="grid-column: 1; grid-row: 1; z-index: 1;">
-            
-            <div class="position-absolute bottom-0 end-0" style="z-index: 2; transform: translateX(10px);">
+        <div class="p-3 shadow-primary rounded-bottom-end"
+            style="grid-column: 1; grid-row: 1; z-index:1; background-color: #19201f;">
+            <div class="position-relative">
+                <img src="assets\images\team\Benjamin.png" height="230px" alt="photo of Benjamin Scott (PhD)"
+                    style="grid-column: 1; grid-row: 1; z-index: 1;">
                 
-                <a href="https://www.linkedin.com/in/benjaminmscott" target="_blank">
-                    <button type="button" class="btn btn-primary rounded-pill">
-                        <i class="bi bi-linkedin"></i>
-                        <span class="visually-hidden">LinkedIn</span>
-                    </button>
-                </a>
-                
+                <div class="position-absolute bottom-0 end-0" style="z-index: 2;">
+                    
+                    <a href="https://www.linkedin.com/in/benjaminmscott" target="_blank">
+                        <button type="button" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-linkedin"></i>
+                            <span class="visually-hidden">LinkedIn</span>
+                        </button>
+                    </a>
+                    
+                    
+                </div>
                 
             </div>
-            
-        </div>
-        <div class="px-3 pb-3 shadow-primary rounded-bottom-end" style="z-index:1; background-color: #19201f; padding-top: 80px; margin-top: -80px;">
             <h3 class="text-white pt-3 fs-4">Benjamin Scott (PhD)</h3>
             <p class="text-muted mb-0">Advisor, Business Development</p>
         </div>
@@ -1327,7 +1353,7 @@ possibility to make image size a variable in the future-->
 
 <div class="m-4 p-4" style="width: 300px">
     <div class="d-grid h-100">
-        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(-10px); z-index:0;" style="width: 230px;">
+        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(15px); z-index:0; width: 230px;">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" filter="blur(3px)">
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style="stop-color: rgb(3, 210, 202);"></stop>
@@ -1338,24 +1364,25 @@ possibility to make image size a variable in the future-->
                     transform="translate(100 100)" />
             </svg>
         </div>
-        <div class="position-relative" style="width: 230px; height: 230px; grid-column: 1; grid-row: 1; z-index:2;">
-            <img src="assets\images\team\Vincent.png" height="230px" alt="photo of Vincent Martin (PhD)"
-                style="grid-column: 1; grid-row: 1; z-index: 1;">
-            
-            <div class="position-absolute bottom-0 end-0" style="z-index: 2; transform: translateX(10px);">
+        <div class="p-3 shadow-primary rounded-bottom-end"
+            style="grid-column: 1; grid-row: 1; z-index:1; background-color: #19201f;">
+            <div class="position-relative">
+                <img src="assets\images\team\Vincent.png" height="230px" alt="photo of Vincent Martin (PhD)"
+                    style="grid-column: 1; grid-row: 1; z-index: 1;">
                 
-                <a href="https://www.linkedin.com/in/vincent-martin-233487158" target="_blank">
-                    <button type="button" class="btn btn-primary rounded-pill">
-                        <i class="bi bi-linkedin"></i>
-                        <span class="visually-hidden">LinkedIn</span>
-                    </button>
-                </a>
-                
+                <div class="position-absolute bottom-0 end-0" style="z-index: 2;">
+                    
+                    <a href="https://www.linkedin.com/in/vincent-martin-233487158" target="_blank">
+                        <button type="button" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-linkedin"></i>
+                            <span class="visually-hidden">LinkedIn</span>
+                        </button>
+                    </a>
+                    
+                    
+                </div>
                 
             </div>
-            
-        </div>
-        <div class="px-3 pb-3 shadow-primary rounded-bottom-end" style="z-index:1; background-color: #19201f; padding-top: 80px; margin-top: -80px;">
             <h3 class="text-white pt-3 fs-4">Vincent Martin (PhD)</h3>
             <p class="text-muted mb-0">Director</p>
         </div>
