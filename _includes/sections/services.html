@@ -42,13 +42,13 @@
         <div style="z-index:2" class="row">
             {% for item in site.data.services %}
             <div class="col-xxl-3 col-md-6 mb-5" style="height: 440px;">
-                <div class="h-100 rounded-bottom-end shadow">
-                    <div class="m-0 p-0 d-grid h-100 rounded-bottom-end"
+                <div class="h-100">
+                    <div class="m-0 p-0 d-grid h-100 rounded-bottom-end shadow"
                         style="background: url('{{ item.image }}') center center; background-size:cover; min-height:310px">
-                        <div class="p-3 bg-white rounded-bottom-end border align-self-end">
-                            <div class=" accordion-item rounded-bottom-end">
+                        <div class="p-3 bg-white rounded-accordion rounded-bottom-end border align-self-end">
+                            <div class=" accordion-item">
                                 <div class="accordion-header " id="heading{{item.id}}">
-                                    <button class="accordion-button rounded-bottom-end collapsed" type="button"
+                                    <button class="accordion-button collapsed" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapse{{item.id}}"
                                         aria-expanded="false" aria-controls="collapse{{item.id}}">
                                         <h3 id="scrollspy{{item.id}}" class="me-5">{{ item.heading }}</h3>

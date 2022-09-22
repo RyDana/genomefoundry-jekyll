@@ -21,33 +21,40 @@ body{
   height: 100%;
   position: absolute;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .rounded-bottom-end{
-  border-radius: 0.5rem !important;
-  border-bottom-right-radius: 4rem !important;
+  border-radius: $border-radius;
+  border-bottom-right-radius: $border-bottom-end-radius;
 }
 
-.rounded-top-start{
-  border-radius: 0.5rem !important;
-  border-top-left-radius: 4rem !important;
-}
+.text-gradient-animated {
+  background: linear-gradient(270deg, #004185, #00958a);
+  background-size: 200% 200%;
 
-.gradient-text {
-  background: linear-gradient(to right top, #01847f, #007c8a, #007293, #006697, #005995, #004e8b, #014381, #043877, #052e67);
+  -webkit-animation: textGradientAnimation 10s ease infinite;
+  -moz-animation: textGradientAnimation 10s ease infinite;
+  animation: textGradientAnimation 10s ease infinite;
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.gradient-background {
-  background: linear-gradient(to right top, #01847f, #007c8a, #007293, #006697, #005995, #004e8b, #014381, #043877, #052e67);
+@-webkit-keyframes textGradientAnimation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
-
-.tint-bg-primary{
-  background-color: tint-color($primary, 90%);
-  width: fit-content;
+@-moz-keyframes textGradientAnimation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes textGradientAnimation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 .icon-circle-primary {
@@ -58,7 +65,7 @@ body{
   display: inline-block;
 }
 
-.icon-circle-primary-black{
+.icon-circle-primary-dark{
   background-color: shade-color($primary, 60%);
   border-radius: 50%;
   height: 36px;
@@ -79,4 +86,24 @@ body{
   $accordion-icon-active-color: white;
   $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
   --#{$prefix}accordion-btn-active-icon: #{escape-svg($accordion-button-active-icon)};
+}
+
+.rounded-accordion .accordion-item {
+  // Only set a border-radius on the last item if the accordion is collapsed
+  &:last-of-type {
+    @include border-bottom-radius(var(--#{$prefix}accordion-border-radius));
+    @include border-bottom-end-radius($border-bottom-end-radius);
+
+    .accordion-button {
+      &.collapsed {
+        @include border-bottom-radius(var(--#{$prefix}accordion-inner-border-radius));
+        @include border-bottom-end-radius($border-bottom-end-radius);
+      }
+    }
+
+    .accordion-collapse {
+      @include border-bottom-radius(var(--#{$prefix}accordion-border-radius));
+      @include border-bottom-end-radius($border-bottom-end-radius);
+    }
+  }
 }
