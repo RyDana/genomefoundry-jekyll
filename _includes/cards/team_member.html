@@ -7,7 +7,7 @@ possibility to make image size a variable in the future-->
 
 <div class="m-4 p-4" style="width: 300px">
     <div class="d-grid h-100">
-        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(-10px); z-index:0;" style="width: 230px;">
+        <div style="grid-column: 1; grid-row: 1; transform: scale(1.5) translateY(15px); z-index:0; width: 230px;">
             <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" filter="blur(3px)">
                 <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style="stop-color: rgb(3, 210, 202);"></stop>
@@ -18,31 +18,32 @@ possibility to make image size a variable in the future-->
                     transform="translate(100 100)" />
             </svg>
         </div>
-        <div class="position-relative" style="width: 230px; height: 230px; grid-column: 1; grid-row: 1; z-index:2;">
-            <img src="{{include.image}}" height="230px" alt="photo of {{include.name}}"
-                style="grid-column: 1; grid-row: 1; z-index: 1;">
-            {% if include.linkedin != nil or include.github != nil %}
-            <div class="position-absolute bottom-0 end-0" style="z-index: 2; transform: translateX(10px);">
-                {% if include.linkedin != nil %}
-                <a href="{{include.linkedin}}" target="_blank">
-                    <button type="button" class="btn btn-primary rounded-pill">
-                        <i class="bi bi-linkedin"></i>
-                        <span class="visually-hidden">LinkedIn</span>
-                    </button>
-                </a>
-                {% endif %}
-                {% if include.github != nil %}
-                <a href="{{include.github}}" target="_blank">
-                    <button type="button" class="btn btn-primary rounded-pill">
-                        <i class="bi bi-github"></i>
-                        <span class="visually-hidden">Github</span>
-                    </button>
-                </a>
+        <div class="p-3 shadow-primary rounded-bottom-end"
+            style="grid-column: 1; grid-row: 1; z-index:1; background-color: #19201f;">
+            <div class="position-relative">
+                <img src="{{include.image}}" height="230px" alt="photo of {{include.name}}"
+                    style="grid-column: 1; grid-row: 1; z-index: 1;">
+                {% if include.linkedin != nil or include.github != nil %}
+                <div class="position-absolute bottom-0 end-0" style="z-index: 2;">
+                    {% if include.linkedin != nil %}
+                    <a href="{{include.linkedin}}" target="_blank">
+                        <button type="button" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-linkedin"></i>
+                            <span class="visually-hidden">LinkedIn</span>
+                        </button>
+                    </a>
+                    {% endif %}
+                    {% if include.github != nil %}
+                    <a href="{{include.github}}" target="_blank">
+                        <button type="button" class="btn btn-primary rounded-pill">
+                            <i class="bi bi-github"></i>
+                            <span class="visually-hidden">Github</span>
+                        </button>
+                    </a>
+                    {% endif %}
+                </div>
                 {% endif %}
             </div>
-            {% endif %}
-        </div>
-        <div class="px-3 pb-3 shadow-primary rounded-bottom-end" style="z-index:1; background-color: #19201f; padding-top: 80px; margin-top: -80px;">
             <h3 class="text-white pt-3 fs-4">{{ include.name }}</h3>
             <p class="text-muted mb-0">{{ include.jobtitle }}</p>
         </div>
