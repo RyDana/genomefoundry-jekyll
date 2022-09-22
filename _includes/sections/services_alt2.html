@@ -1,0 +1,15 @@
+<div class="col-lg-12 align-self-start">
+    {% include typography/big_section_heading.html
+    flag = "Services"
+    heading="Build More. Test More.
+    Services to accelerate your science."
+    subheading = "Priced for cost-recovery. Keep your IP"
+    %}
+</div>
+<div class="accordion accordion-flush dark-accordion" id="accordionFlushAssembly">
+    <div class="row">
+        {% for item in site.data.services %}
+            {% include cards/accordion_over_picture.html content = item %}
+        {% endfor %}
+    </div>
+</div>

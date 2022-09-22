@@ -3,6 +3,12 @@ body{
   font-size: $h5-font-size;
 }
 
+.shadow-primary {
+  -moz-box-shadow:    0 .5rem 1rem rgba($primary, .5);
+  -webkit-box-shadow: 0 .5rem 1rem rgba($primary, .5);
+  box-shadow:         0 .5rem 1rem rgba($primary, .5);
+}
+
 .video-container {
   min-height: 300px;
   min-width: 300px;
@@ -16,6 +22,16 @@ body{
   position: absolute;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.rounded-bottom-end{
+  border-radius: 0.5rem !important;
+  border-bottom-right-radius: 4rem !important;
+}
+
+.rounded-top-start{
+  border-radius: 0.5rem !important;
+  border-top-left-radius: 4rem !important;
 }
 
 .gradient-text {

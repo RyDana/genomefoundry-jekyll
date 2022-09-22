@@ -19,11 +19,11 @@ title: Home
     {% include section_wrappers/default.html content = include_content %}
     </div>
 
-    <div class="py-5" style="background: #030e0c;">
+    <div class="pt-5" style="background: #030e0c;">
     <!-- ABOUT SECTION -->
     <!-- Captures the about content -->
     {% capture include_content %}
-        {% include sections/about_alt2.html %}
+        {% include sections/about.html %}
     {% endcapture %}
     <!-- Sends the 'about content' and the 'about scrollspy data' into the default section wrapper -->
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.about.link %}
