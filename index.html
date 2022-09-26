@@ -10,10 +10,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-md sticky-top bg-light fs-5">
+  <nav id='navbar' class="navbar navbar-dark navbar-expand-md sticky-top fs-5 fw-normal" style="transition: all 0.25s">
     <div class="container-lg">
-        <a class="navbar-brand" href="#">
-            <img src="assets\images\logo\genome_foundry_logo.svg" width="230px" alt="genome foundry logo">
+        <a class="navbar-brand mt-2 d-grid" href="#">
+            <img id='navLogoDark' src="assets\images\logo\genome_foundry_logo.svg" width="230px" alt="genome foundry logo" style = 'grid-column: 1; grid-row: 1; opacity: 0; transition: all 0.25s;'>
+            <img id='navLogoLight'src="assets\images\logo\genome_foundry_logo_white.svg" width="230px" alt="genome foundry logo" style = 'grid-column: 1; grid-row: 1; transition: all 0.25s;'>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +58,7 @@
                     
                         <li class="nav-item">
                         
-                            <a class="nav-link btn btn-dark shadow ms-2 text-white fw-normal" href="#scrollspyContact">Contact Us</a>
+                            <a class="nav-link btn btn-primary shadow ms-2 text-white fw-normal" href="#scrollspyContact">Contact Us</a>
                         
                         </li>
                     
@@ -76,53 +77,25 @@
     <div style = "background: 
     radial-gradient(45% 45% at 50% 50%,#00c08630 0,#00000000 100%);">
     <!-- HERO SECTION -->
-    <header class="masthead pb-5 pt-3">
-    <div class="container-lg d-grid position-relative align-items-end">
-        <!-- <div
-            style="grid-column: 1; grid-row: 1; z-index:0; position: absolute; top: 0; right: -150px; filter:blur(8px);">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="50vh">
-                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color: #03d2ca;"></stop>
-                    <stop offset="100%" style="stop-color: #0172c2;"></stop>
-                </linearGradient>
-                <path fill="url(#grad1)" style="opacity: 0.66;"
-                    d="M40.1,-49.9C51.4,-38.3,59.5,-25.1,66.4,-8.4C73.4,8.4,79.1,28.7,71.9,42C64.8,55.2,44.7,61.5,27.6,61.6C10.4,61.8,-3.8,55.7,-18,50.3C-32.3,44.8,-46.4,39.9,-57,29.2C-67.6,18.5,-74.6,2.1,-71.2,-11.7C-67.7,-25.5,-53.9,-36.6,-40.3,-47.8C-26.7,-58.9,-13.3,-70.2,0.5,-70.8C14.4,-71.5,28.8,-61.5,40.1,-49.9Z"
-                    transform="translate(100 100)" />
-            </svg>
-        </div>
-        <div
-            style="grid-column: 1; grid-row: 1; z-index:0; position: absolute; bottom: -150px; left: -150px; filter:blur(8px);">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="50vh">
-                <linearGradient id="grad14" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color: #e7cb9e;"></stop>
-                    <stop offset="100%" style="stop-color: #b18c62;"></stop>
-                </linearGradient>
-                <path fill="url(#grad14)" style="opacity: 0.66;"
-                    d="M40.1,-49.9C51.4,-38.3,59.5,-25.1,66.4,-8.4C73.4,8.4,79.1,28.7,71.9,42C64.8,55.2,44.7,61.5,27.6,61.6C10.4,61.8,-3.8,55.7,-18,50.3C-32.3,44.8,-46.4,39.9,-57,29.2C-67.6,18.5,-74.6,2.1,-71.2,-11.7C-67.7,-25.5,-53.9,-36.6,-40.3,-47.8C-26.7,-58.9,-13.3,-70.2,0.5,-70.8C14.4,-71.5,28.8,-61.5,40.1,-49.9Z"
-                    transform="translate(100 100)" />
-            </svg>
-        </div> -->
-        <div class="mb-3"
-            style="grid-column: 1; grid-row: 1; z-index:1;">
-            <h1 style="font-size: calc(2.625rem + 4.5vw); margin-top:15vh; text-transform: uppercase;">
-                The power of <span class="text-gradient-animated">automation</span> at the
-                service of <span class="text-gradient-animated">biology</span></h1>
-        </div>
-        <div class="video-container" style="min-height: 50vh; z-index:1;">
-            <video autoplay muted loop poster="" class="rounded-bottom-end shadow-lg">
+    <header class="" style="margin-top: -120px;">
+    <div class="d-grid position-relative">
+        <div class="video-container"
+            style="grid-column: 1; grid-row: 1; z-index:1; min-height: 110vh;">
+            <video autoplay muted loop poster="">
                 <source src="./assets/videos/assets_videos_Final_Header_website_cropped_NO_TEXT.webm"
                     type="video/webm" />
                 Your browser does not support the video tag.
             </video>
         </div>
-        <div class="col-lg-4 ms-lg-auto mt-3" style="z-index:1;">
-        <p class="lead fs-4 text-end">
-            As a cutting edge innovator, what will you
-            build and test at a scale of 1,000? 100,000? </br>
-            Build More. Test More.
-        </p>
-        </div>
+        <div style="grid-column: 1; grid-row: 1; z-index:1; background-color: black; opacity: 0.5;">
 
+        </div>
+        <div class="container-lg text-white"
+            style="grid-column: 1; grid-row: 1; z-index:2; margin-top: 40vh;">
+            <h1 style="font-size: calc(2rem + 5.5vw); text-transform: uppercase;">
+                The power of <span class="text-gradient-animated-light">automation</span> at the
+                service of <span class="text-gradient-animated-light">biology</span></h1>
+        </div>
     </div>
 </header>
     
@@ -1751,6 +1724,7 @@ Montreal, QC, H4B 1R6</a>
 </section>
     </div>
 </div>
+<script src="./assets/js/main.js" ></script>
 
   </main>
   <footer class="container-lg py-4 my-4">
