@@ -41,6 +41,19 @@ body{
   -webkit-text-fill-color: transparent;
 }
 
+.text-gradient-animated-light {
+  background: linear-gradient(270deg, #fff3e1, #b9fffa);
+  background-size: 200% 200%;
+
+  -webkit-animation: textGradientAnimation 10s ease infinite;
+  -moz-animation: textGradientAnimation 10s ease infinite;
+  animation: textGradientAnimation 10s ease infinite;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @-webkit-keyframes textGradientAnimation {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}

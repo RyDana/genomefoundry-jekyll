@@ -22,7 +22,6 @@ title: Genome Foundry
 description: The power of automation at the service of biology
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-logo: assets\images\logo\genome_foundry_logo.svg
 
 #specify a directory to store all your collections in the same place (_drafts and _posts need to be in this directory too)
 collections_dir: my_collections

@@ -1,7 +1,8 @@
-<nav class="navbar navbar-expand-md sticky-top bg-light fs-5">
+<nav id='navbar' class="navbar navbar-dark navbar-expand-md sticky-top fs-5 fw-normal" style="transition: all 0.25s">
     <div class="container-lg">
-        <a class="navbar-brand" href="#">
-            <img src="{{ site.logo }}" width="230px" alt="genome foundry logo">
+        <a class="navbar-brand mt-2 d-grid" href="#">
+            <img id='navLogoDark' src="assets\images\logo\genome_foundry_logo.svg" width="230px" alt="genome foundry logo" style = 'grid-column: 1; grid-row: 1; opacity: 0; transition: all 0.25s;'>
+            <img id='navLogoLight'src="assets\images\logo\genome_foundry_logo_white.svg" width="230px" alt="genome foundry logo" style = 'grid-column: 1; grid-row: 1; transition: all 0.25s;'>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +24,7 @@
                     {% else %}
                         <li class="nav-item">
                         {% if item[1].button == true %}
-                            <a class="nav-link btn btn-dark shadow ms-2 text-white fw-normal" href="{{ item[1].link }}">{{ item[1].name }}</a>
+                            <a class="nav-link btn btn-primary shadow ms-2 text-white fw-normal" href="{{ item[1].link }}">{{ item[1].name }}</a>
                         {% else %}
                             <a class="nav-link" href="{{ item[1].link }}">{{ item[1].name }}</a>
                         {% endif %}
