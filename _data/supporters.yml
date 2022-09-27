@@ -1,3 +1,7 @@
+- name: Concordia University
+  logo: assets\images\partners\Concordia-logo-white.png
+  logo_height: 50
+  link: https://www.concordia.ca/
 - name: National Research Council of Canada
   logo: assets\images\partners\National_Research_Council_of_Canada_logo_white.png
   logo_height: 50
@@ -6,7 +10,7 @@
   logo: assets\images\partners\cfi-logo-new-light.svg
   logo_height: 70
   link: https://www.innovation.ca/
-- name: Concordia University
-  logo: assets\images\partners\Concordia-logo-white.png
-  logo_height: 50
-  link: https://www.concordia.ca/
+- name: District 3
+  logo: assets\images\partners\D3-logo-white.png
+  logo_height: 70
+  link: https://district3.co/

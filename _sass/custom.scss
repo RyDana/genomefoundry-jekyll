@@ -28,6 +28,13 @@ body{
   border-bottom-right-radius: $border-bottom-end-radius;
 }
 
+.gradient-text {
+  background: linear-gradient(to bottom right, #018077 , #004691);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .text-gradient-animated {
   background: linear-gradient(270deg, #004185, #00958a);
   background-size: 200% 200%;

@@ -9,14 +9,12 @@ title: Home
     radial-gradient(20% 45% at 100% 50%,#cb024e63 0,#03d2ca00 100%),
     radial-gradient(20% 45% at 0% 50%,#03d2cb46 0,#03d2ca00 100%);"> -->
     <div style = "background: 
-    radial-gradient(45% 45% at 50% 50%,#00c08630 0,#00000000 100%);">
+    radial-gradient(45% 45% at 50% 50%,#00c08630 0,#00000000 100%),
+    radial-gradient(50.08% 44.51% at 100% 100%,#0172c263 0,#0172c200 100%);">
     <!-- HERO SECTION -->
     {% include sections/hero_alt3.html %}
-    
-
-    <!-- TEMPORARY LOGO SECTION -->
     {% capture include_content %}
-        {% include sections/logo_wall_oneline.html %}
+        {% include sections/pitch.html %}
     {% endcapture %}
     {% include section_wrappers/default.html content = include_content %}
     </div>
@@ -25,7 +23,7 @@ title: Home
     <!-- ABOUT SECTION -->
     <!-- Captures the about content -->
     {% capture include_content %}
-        {% include sections/about.html %}
+        {% include sections/about_alt3.html %}
     {% endcapture %}
     <!-- Sends the 'about content' and the 'about scrollspy data' into the default section wrapper -->
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.about.link %}
@@ -387,17 +385,12 @@ title: Home
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.services.link%}
     </div>
 
-    <div class="pb-5" style="background: 
-        radial-gradient(50.08% 44.51% at 100% 100%,#0172c263 0,#0172c200 100%);">
-    <!-- DNA DISCOUNT SECTION -->
-    {% capture include_content %}
-        {% include sections/dna_discount.html %}
-    {% endcapture %}
-    {% include section_wrappers/default.html content = include_content %}
-    </div>
-
-
     <div class="py-5" style="background: #030e0c;">
+    {% capture include_content %}
+        <!-- VISIONmISSION SECTION -->
+        {% include sections/vision_mission.html %}
+    {% endcapture %}
+    {% include section_wrappers/default.html content = include_content%}
     {% capture include_content %}
         <!-- TEAM SECTION -->
         {% include sections/team.html %}
@@ -405,21 +398,21 @@ title: Home
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.team.link %}
     </div>
 
-    <!-- OPPORTUNITIES SECTION -->
     <div class="pt-5"  style="background: 
     radial-gradient(60.76% 48.01% at 100% 0%,rgba(226,67,41,.2) 0,rgba(226,67,41,0) 100%)">
-    {% capture include_content %}
-        {% include sections/opportunities.html %}
-    {% endcapture %}
-    {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.opportunities.link %}
-    </div>
-
-    <div style="background: linear-gradient(180deg, #ffffff00 0%, #f0b46f1f 100%);">
     <!-- CONTACT SECTION -->
     {% capture include_content %}
         {% include sections/contact.html %}
     {% endcapture %}
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.contact.link %}
+    </div>
+
+    <div style="background: linear-gradient(180deg, #ffffff00 0%, #f0b46f1f 100%);">
+    <!-- LOGO SECTION -->
+    {% capture include_content %}
+        {% include sections/logo_wall_oneline.html %}
+    {% endcapture %}
+    {% include section_wrappers/default.html content = include_content %}
     </div>
 </div>
 <script src="./assets/js/main.js" ></script>
