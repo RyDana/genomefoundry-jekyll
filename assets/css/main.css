@@ -2340,6 +2340,8 @@ body { overflow-x: hidden; font-size: 1.25rem; }
 
 .rounded-bottom-end { border-radius: 0.5rem; border-bottom-right-radius: 4rem; }
 
+.gradient-text { background: linear-gradient(to bottom right, #018077, #004691); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
 .text-gradient-animated { background: linear-gradient(270deg, #004185, #00958a); background-size: 200% 200%; -webkit-animation: textGradientAnimation 10s ease infinite; -moz-animation: textGradientAnimation 10s ease infinite; animation: textGradientAnimation 10s ease infinite; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
 .text-gradient-animated-light { background: linear-gradient(270deg, #fff3e1, #b9fffa); background-size: 200% 200%; -webkit-animation: textGradientAnimation 10s ease infinite; -moz-animation: textGradientAnimation 10s ease infinite; animation: textGradientAnimation 10s ease infinite; background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
