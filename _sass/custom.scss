@@ -28,6 +28,15 @@ body{
   border-bottom-right-radius: $border-bottom-end-radius;
 }
 
+.gradient-bg {
+  background: linear-gradient(to right top, #01847f, #007c8a, #007293, #006697, #005995, #004e8b, #014381, #043877, #052e67);
+  // background: linear-gradient(to bottom right, #018077 , #004691);
+}
+
+.text-primary-light{
+  color: #00d3c9;
+}
+
 .gradient-text {
   background: linear-gradient(to bottom right, #018077 , #004691);
   background-clip: text;
@@ -86,7 +95,7 @@ body{
 }
 
 .icon-circle-primary-dark{
-  background-color: shade-color($primary, 60%);
+  background-color: rgba(#00d3c9, 0.2);
   border-radius: 50%;
   height: 36px;
   width: 36px;

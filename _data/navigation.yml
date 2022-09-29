@@ -17,9 +17,12 @@ services:
 team:
   name: Team
   link: "#scrollspyTeam"
-opportunities: 
-  name: Opportunities
-  link: "#scrollspyOpportunities"
+gba:
+  name: GBA 2022 meeting
+  link: https://sites.events.concordia.ca/sites/gba22/en/global-biofoundries-alliance-meeting-2022-gba2022
+# opportunities: 
+#   name: Opportunities
+#   link: "#scrollspyOpportunities"
 contact: 
   name: Contact Us
   link: "#scrollspyContact"

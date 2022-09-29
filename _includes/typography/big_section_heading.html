@@ -18,4 +18,4 @@ be careful, heading and subheading are sensitive to line breaks -->
     {% include typography/flag.html name=include.flag light = flagLight %}
 {% endif %}
 <p class="display-3 mb-3 {{ headingColor }}">{{ include.heading | default: "You are missing a heading" | newline_to_br}}</p>
-<p class="lead mb-5 fs-4 {{ subheadingColor }}">{{ include.subheading | default: "You are missing a subheading" | newline_to_br }}</p>
+<p class="lead mb-5 fs-4 fw-normal {{ subheadingColor }}">{{ include.subheading | default: "You are missing a subheading" | newline_to_br }}</p>
