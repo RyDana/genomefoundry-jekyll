@@ -3,6 +3,20 @@ body{
   font-size: $h5-font-size;
 }
 
+.container-lg {
+  --bs-gutter-x: 6rem;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+@media (max-width: 1200px) {
+  .container-lg {
+    --bs-gutter-x: 1.5rem;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+  }
+}
+
 .shadow-primary {
   -moz-box-shadow:    0 .5rem 1rem rgba($primary, .5);
   -webkit-box-shadow: 0 .5rem 1rem rgba($primary, .5);

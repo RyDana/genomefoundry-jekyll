@@ -1,5 +1,29 @@
 <footer class="container-lg py-4 my-4">
-    <div class="d-flex flex-wrap justify-content-between align-items-top mb-4">
+    <div class="row">
+        <div class="col-lg-6 text-end order-lg-2">
+            {% for item in site.data.contact.contact %}
+            <div class="py-2">
+                <a href="{{ item[1].link }}" style="text-decoration: none;" class="text-reset align-self-center">{{
+                    item[1].text | newline_to_br }}</a>
+            </div>
+            {% endfor %}
+            <div class="py-2"><a href="{{site.data.contact.social_media.twitter.link}}"><i class="bi {{site.data.contact.social_media.twitter.icon}}"></i><span class="d-none">Twitter</span></a></div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+            <div class="d-flex">
+                <div class="pb-3">
+                    <img src="assets\images\logo\genome_foundry_logo.svg" width="200px" alt="genome foundry logo">
+                </div>
+                <div class="pb-3 ps-3">
+                    <img src="assets\images\partners\concordia-university-logo-vector-cropped.svg" width="200px"
+                        alt="concordia university logo">
+                </div>
+            </div>
+            <span class="text-black-50">&copy; Concordia Genome Foundry 2022</span>
+        </div>
+
+    </div>
+    <!-- <div class="d-flex flex-wrap justify-content-between align-items-top mb-4">
         <div class="d-flex flex-wrap justify-content-start align-items-center pb-5">
             <div class="pb-3">
                 <img src="assets\images\logo\genome_foundry_logo.svg" width="200px" alt="genome foundry logo">
@@ -14,6 +38,6 @@
             <li class="ms-3"><a class="text-black-50" href="#"><i class="bi bi-instagram"><span class="d-none">Instagram</span></i></a></li>
             <li class="ms-3"><a class="text-black-50" href="#"><i class="bi bi-facebook"><span class="d-none">Facebook</span></i></a></li>
         </ul>
-    </div>
-    <span class="text-black-50">&copy; Concordia Genome Foundry 2022</span>
+    </div> -->
+
 </footer>

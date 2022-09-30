@@ -385,12 +385,14 @@ title: Home
     {% capture include_content %}
         <!-- TEAM SECTION -->
         {% include sections/team.html %}
+        
     {% endcapture %}
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.team.link %}
+
+    {% include sections/logo_wall_oneline.html %}
     </div>
 
-    <div class="pt-5"  style="background: 
-    radial-gradient(60.76% 48.01% at 100% 0%,rgba(226,67,41,.2) 0,rgba(226,67,41,0) 100%)">
+    <div class="pt-5" >
     <!-- CONTACT SECTION -->
     {% capture include_content %}
         {% include sections/contact.html %}
@@ -398,12 +400,8 @@ title: Home
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.contact.link %}
     </div>
 
-    <div style="background: linear-gradient(180deg, #ffffff00 0%, #f0b46f1f 100%);">
-    <!-- LOGO SECTION -->
-    {% capture include_content %}
-        {% include sections/logo_wall_oneline.html %}
-    {% endcapture %}
-    {% include section_wrappers/default.html content = include_content %}
+    <div>
+
     </div>
 </div>
 <script src="./assets/js/main.js" ></script>

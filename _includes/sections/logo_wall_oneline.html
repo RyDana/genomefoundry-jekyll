@@ -1,12 +1,12 @@
 <div class="d-flex flex-wrap justify-content-center align-items-center mb-3">
-    <h2 class="text-black-50 m-5">Supported by</h2>
+    <h2 class="text-white m-5">Supported by</h2>
     {% for item in site.data.supporters %}
         <div class="mx-5 my-3">
             <a href="{{ item.link }}" >
                 <img height="{{ item.logo_height | minus: 15 }}px"
                     src="{{ item.logo }}"
                     alt="{{ item.name }} logo"
-                    style="filter: brightness(0.5);">
+                    >
             </a>
         </div>
     {% endfor %}

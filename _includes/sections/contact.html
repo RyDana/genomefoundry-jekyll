@@ -1,5 +1,5 @@
-{% include typography/flag.html name="Contact Us" %}
-<div class="row d-flex">
+
+<!-- <div class="row d-flex">
     <div class="col-md-5 my-3">
         <ul class="list-group rounded-bottom-end bg-white shadow list-group-flush">
             {% for item in site.data.contact.contact %}
@@ -29,4 +29,11 @@
     <div class="col-md-5 my-3">
         <img class="img-fluid" src="./assets/images/photos/building.webp" alt="Genome Foundry building">
     </div>
+</div> -->
+
+<div class="form-floating col-md-9 p-5 my-3 mx-auto rounded-bottom-end bg-white shadow">
+    <div class="mb-4">
+    {% include typography/flag.html name="Contact Us" %}
+    </div>
+    {% include cards/contact_form.html %}
 </div>
