@@ -18,8 +18,9 @@ team:
   name: Team
   link: "#scrollspyTeam"
 gba:
-  name: GBA 2022 meeting
+  name: GBA2022
   link: https://sites.events.concordia.ca/sites/gba22/en/global-biofoundries-alliance-meeting-2022-gba2022
+  new_tab: true
 # opportunities: 
 #   name: Opportunities
 #   link: "#scrollspyOpportunities"

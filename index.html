@@ -16,7 +16,7 @@ title: Home
     {% include section_wrappers/default.html content = include_content %}
     </div>
 
-    <div class="pt-5 gradient-bg">
+    <div class="py-5 gradient-bg">
     <!-- ABOUT SECTION -->
     <!-- Captures the about content -->
     {% capture include_content %}
@@ -373,13 +373,11 @@ title: Home
         </div>
     </section>
 
-    <div class="pt-5">
     <!-- SERVICES SECTION -->
     {% capture include_content %}
         {% include sections/services.html %}
     {% endcapture %}
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.services.link%}
-    </div>
 
     <div class="py-5 gradient-bg">
     {% capture include_content %}
@@ -392,16 +390,10 @@ title: Home
     {% include sections/logo_wall_oneline.html %}
     </div>
 
-    <div class="pt-5" >
     <!-- CONTACT SECTION -->
     {% capture include_content %}
         {% include sections/contact.html %}
     {% endcapture %}
     {% include section_wrappers/default.html content = include_content scrollspy = site.data.navigation.contact.link %}
-    </div>
-
-    <div>
-
-    </div>
 </div>
 <script src="./assets/js/main.js" ></script>

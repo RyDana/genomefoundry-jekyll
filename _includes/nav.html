@@ -11,22 +11,32 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                 {% for item in site.data.navigation %}
+                    {% if item[1].new_tab == true %}
+                        {% assign linkTarget = "_blank" %}
+                    {% else %}
+                        {% assign linkTarget = "" %}
+                    {% endif %}
                     {% if item[1].submenu %}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="{{ item[1].link }}"
                                 role="button" aria-expanded="false">{{ item[1].name }}</a>
                             <ul class="dropdown-menu">
                                 {% for subitem in item[1].submenu %}
-                                <li><a class="dropdown-item" href="{{ subitem[1].link }}">{{ subitem[1].name }}</a></li>
+                                    {% if subitem[1].new_tab == true %}
+                                        {% assign linkTargetSub = "_blank" %}
+                                    {% else %}
+                                        {% assign linkTargetSub = "" %}
+                                    {% endif %}
+                                    <li><a class="dropdown-item" href="{{ subitem[1].link }}" target="{{linkTargetSub}}">{{ subitem[1].name }}</a></li>
                                 {% endfor %}
                             </ul>
                         </li>
                     {% else %}
                         <li class="nav-item">
                         {% if item[1].button == true %}
-                            <a class="nav-link btn btn-primary shadow ms-2 text-white fw-normal" href="{{ item[1].link }}">{{ item[1].name }}</a>
+                            <a class="nav-link btn btn-primary shadow ms-2 text-white fw-normal" href="{{ item[1].link }}" target="{{linkTarget}}">{{ item[1].name }}</a>
                         {% else %}
-                            <a class="nav-link" href="{{ item[1].link }}">{{ item[1].name }}</a>
+                            <a class="nav-link" href="{{ item[1].link }}" target="{{linkTarget}}">{{ item[1].name }}</a>
                         {% endif %}
                         </li>
                     {% endif %}
