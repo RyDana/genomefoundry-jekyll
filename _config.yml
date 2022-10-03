@@ -34,10 +34,8 @@ collections:
   team:
     output: true
     # order:
-    #   - hello-world.md
-    #   - introduction.md
-    #   - basic-concepts.md
-    #   - advanced-concepts.md
+    #   - vince.md
+    #   - ben.md
 
 # configures the default front matter for each type of page
 defaults:
