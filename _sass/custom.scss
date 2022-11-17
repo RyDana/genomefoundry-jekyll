@@ -44,6 +44,9 @@ body{
 
 .bg-gradient-primary {
   background: linear-gradient(to right top, #01847f, #007c8a, #007293, #006697, #005995, #004e8b, #014381, #043877, #052e67);
+  background-size: 100vw 100vh;
+  background-position: center;
+  background-attachment: fixed;
   // background: linear-gradient(to bottom right, #018077 , #004691);
 }
 

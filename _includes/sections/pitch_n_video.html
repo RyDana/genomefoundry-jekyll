@@ -1,0 +1,67 @@
+<div class="row py-5 justify-content-between align-items-center">
+    <a class="col-lg-5 mb-5 mb-md-0 d-grid order-md-2" data-bs-toggle="modal" data-bs-target="#videoPitch" style="cursor: pointer;">
+        <!-- <div style="grid-column: 1; grid-row: 1; transform: scale(1.5); ">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color: #03d2ca;"></stop>
+                    <stop offset="100%" style="stop-color: #0172c2;"></stop>
+                </linearGradient>
+                <path fill="url(#grad1)" style="opacity: 0.66;"
+                    d="M40.1,-49.9C51.4,-38.3,59.5,-25.1,66.4,-8.4C73.4,8.4,79.1,28.7,71.9,42C64.8,55.2,44.7,61.5,27.6,61.6C10.4,61.8,-3.8,55.7,-18,50.3C-32.3,44.8,-46.4,39.9,-57,29.2C-67.6,18.5,-74.6,2.1,-71.2,-11.7C-67.7,-25.5,-53.9,-36.6,-40.3,-47.8C-26.7,-58.9,-13.3,-70.2,0.5,-70.8C14.4,-71.5,28.8,-61.5,40.1,-49.9Z"
+                    transform="translate(100 100)" />
+            </svg>
+        </div> -->
+        <div class="mx-2 align-self-center" style="grid-column: 1; grid-row: 1; min-height: 500px; height: 100%; position: relative;" >
+            <div class="shadow h-100" style="background: url('assets/images/photos/Concordia_Genome_Foundry_Highthroughput_Mammalian_Platform.gif') center center; 
+            background-size:cover; min-height:310px; z-index:2;">
+            </div>
+        </div>
+        <div
+            style="grid-column: 1; grid-row: 1; z-index:3; font-size: 100px; opacity: 0.8; display: flex; justify-content: center; align-items: center;">
+            <p><i class="bi bi-youtube text-white"></i></p>
+        </div>
+    </a>
+    <!-- Vertically centered modal -->
+    <div class="modal fade" id="videoPitch" tabindex="-1" aria-labelledby="videoPitchLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content " style="position:relative;padding-bottom:56.25%;">
+                    <iframe width="100%" height="100%" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube-nocookie.com/embed/gmqQ8xLix-I" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+            </div>
+        </div>
+    </div>
+    <script>
+        const myCollapsible = document.getElementById('videoPitch');
+        myCollapsible.addEventListener('hidden.bs.collapse', event => {
+            console.log("heyo!!!")
+            document.querySelector("#videoPitch iframe").attr("src", document.querySelector("#videoPitch iframe").attr("src"));
+        });
+    </script>
+
+    <div class="col-lg-7 order-md-1">
+        {% include typography/big_section_heading.html
+            heading="The Genome Foundry is pioneering high-throughput services for engineering life at the next scale."
+            subheading="As a cutting edge innovator, what will you build and test at a scale of 1,000? 100,000?"
+            light=false
+        %}
+        <!-- <p class="display-3 mb-3" style="font-size: calc(2rem + 3vw);">The Genome Foundry is pioneering high-throughput
+            services for engineering life at the next scale.</p>
+        <p class="lead mb-5 fs-1 ">As a cutting edge innovator, what will you build and test at a scale of
+            1,000? 100,000?</p> -->
+    </div>
+
+</div>
+<div class="row py-5 gx-5 justify-content-between align-items-center">
+    <div class="col-lg-6 mb-3 mb-lg-0">
+        <div class="shadow h-100" style="background: url('assets/images/photos/Genome_Foundry_facilities_069.jpg') center center; 
+        background-size:cover; min-height:310px; z-index:2;">
+        </div>
+    </div>
+    <div class="col-lg-6">
+        {% include typography/big_section_heading.html
+        heading="Build more. Test more."
+        subheading="Our end-to-end solutions unlock the next scale of engineering biology. When time, cost, scalability, and result quality are of utmost importance."
+        light=false
+        %}
+    </div>
+
+</div>
