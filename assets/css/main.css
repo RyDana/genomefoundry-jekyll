@@ -2344,7 +2344,7 @@ body { overflow-x: hidden; font-size: 1.25rem; }
 
 .rounded-bottom-end { border-radius: 0.5rem; border-bottom-right-radius: 4rem; }
 
-.bg-gradient-primary { background: linear-gradient(to right top, #01847f, #007c8a, #007293, #006697, #005995, #004e8b, #014381, #043877, #052e67); }
+.bg-gradient-primary { background: linear-gradient(to right top, #01847f, #007c8a, #007293, #006697, #005995, #004e8b, #014381, #043877, #052e67); background-size: 100vw 100vh; background-position: center; background-attachment: fixed; }
 
 .text-primary-light { color: #00d3c9; }
 
