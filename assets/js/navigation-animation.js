@@ -1,4 +1,4 @@
-window.addEventListener('load', (event) => {
+window.addEventListener('DOMContentLoaded', (event) => {
     console.log("Page loaded.");
 
     const nav = document.querySelector("#navbar");

@@ -4,16 +4,13 @@ about:
 services:
   name: Services
   link: "#scrollspyServices"
-  # submenu:
+  # submenu: #key word for generating a sub-menu
   #   assembly:
   #     name: High-Throughput DNA Assembly
   #     link: "#scrollspyAssembly"
   #   microbial:
   #     name: Microbial Engineering
   #     link: "#scrollspyMicrobial"
-  #   mammalian:
-  #     name: Mammalian Cell Engineering
-  #     link: "#scrollspyMammalian"
 team:
   name: Team
   link: "#scrollspyTeam"
@@ -21,9 +18,9 @@ gba:
   name: GBA2022
   link: https://sites.events.concordia.ca/sites/gba22/en/global-biofoundries-alliance-meeting-2022-gba2022
   new_tab: true
-# opportunities: 
-#   name: Opportunities
-#   link: "#scrollspyOpportunities"
+# templatePage: #Example of linking a separate page (that is found in the _pages collection)
+#   name: Template Page 
+#   link: /template #if the page does NOT have a specified permalink in its front matter, write the name of the file (predeceded by "/") as the link
 contact: 
   name: Contact Us
   link: "#scrollspyContact"

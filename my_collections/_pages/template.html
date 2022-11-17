@@ -1,0 +1,22 @@
+---
+published: false
+title: Template
+layout: default
+#permalink: /my-template #This permalink is optional. if none is set, the page will have the file name as its URL (e.g. /template)
+---
+
+This is a template of a separate page for the Genome Foundry website. 
+
+This page's info can be accessed, by any other page, through Liquid notation like this: 
+
+{% assign pages = site.pages | where: 'url', '/template' %}
+{% for page in pages %}
+        <a href="{{ page.url }}">
+        {{ page.title }} has the {{ page.layout }} layout
+        </a>
+        <p>{{ page.content | markdownify}}</p>
+{% endfor %}
+
+If separate pages are wished to be used, Scrollspy should stop being used in the navigation bar.
+
+Additionally, you would need to un-comment the declaration of this collection, its default front-matter values, in the _config.yml

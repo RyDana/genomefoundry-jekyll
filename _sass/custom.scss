@@ -42,7 +42,7 @@ body{
   border-bottom-right-radius: $border-bottom-end-radius;
 }
 
-.gradient-bg {
+.bg-gradient-primary {
   background: linear-gradient(to right top, #01847f, #007c8a, #007293, #006697, #005995, #004e8b, #014381, #043877, #052e67);
   // background: linear-gradient(to bottom right, #018077 , #004691);
 }
@@ -51,7 +51,7 @@ body{
   color: #00d3c9;
 }
 
-.gradient-text {
+.text-gradient-primary {
   background: linear-gradient(to bottom right, #018077 , #004691);
   background-clip: text;
   -webkit-background-clip: text;

@@ -19,3 +19,7 @@ social_media:
     text: SynBioCU
     icon: bi-twitter
     link: https://twitter.com/SynBioCU
+  youtube: 
+    text: Genome Foundry Youtube
+    icon: bi-youtube
+    link: https://www.youtube.com/channel/UC2tY2f4Uc0RjFpIEXiwKg3Q

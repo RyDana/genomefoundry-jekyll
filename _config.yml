@@ -14,7 +14,7 @@
 #
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# you will see them accessed via {{ site.title }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
@@ -29,18 +29,16 @@ collections_dir: my_collections
 #allows grouping related content into folders
 collections:
   opportunities:
-    #output: true # allows Jekyll to create a rendered page for each document in your collection
     sort_by: date #date is automatically assigned by Jekyll
-  team:
-    output: true
-    # order:
-    #   - vince.md
-    #   - ben.md
+  # pages:
+  #   output: true # allows Jekyll to create a rendered page for each document in your collection
+  #   permalink: /:name
+  # team:
+  #   output: true
 
 # configures the default front matter for each type of page
 defaults:
-  - 
-    scope:
+  - scope:
       path: "my_collections/_opportunities"
     values:
       title: Job title
@@ -60,10 +58,14 @@ defaults:
           Centre for Applied Synthetic Biology at  
           Concordia University
   # - scope:
-  #     path: ""
-  #     type: "team"
+  #     path: "my_collections/_team"
   #   values:
-  #     layout: "team"
+  #     published: false
+  # - scope:
+  #     path: "my_collections/_pages"
+  #   values:
+  #     published: false
+  #     layout: default
 
 # activate the following plugins
 plugins:
