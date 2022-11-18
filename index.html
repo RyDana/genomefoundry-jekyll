@@ -9,9 +9,15 @@ title: Home
     <!-- HERO SECTION -->
     {% include sections/hero_alt3.html %}
 
-    <!-- ABOUT SECTION -->
+    <!-- PITCH SECTION -->
     {% capture include_content %}
         {% include sections/pitch_n_video.html %}
+    {% endcapture %}
+    {% include section_wrappers/default.html content = include_content %}
+
+    <!-- TESTIMONIAL SECTION -->
+    {% capture include_content %}
+        {% include sections/testimonials.html %}
     {% endcapture %}
     {% include section_wrappers/default.html content = include_content %}
 

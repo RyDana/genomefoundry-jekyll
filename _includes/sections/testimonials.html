@@ -1,0 +1,48 @@
+<div class="mx-auto">
+    <div id="carouselTestimonials" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            {% for testimonial in site.data.testimonials %}
+            <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="{{ forloop.index0 }}" {% if
+                forloop.first %}class="active" {% endif %} aria-current="true"
+                aria-label="Testimonial {{ forloop.index }}"></button>
+            {% endfor %}
+        </div>
+        <div class="carousel-inner pb-5">
+            {% for testimonial in site.data.testimonials %}
+            <div class="carousel-item {% if forloop.first %} active {% endif %}" 
+                data-bs-interval="5000">
+                <div class="card rounded-bottom-end mb-3 col-md-9 mx-auto" >
+                    <div class="row p-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0" style="min-height: 200px; display: flex; justify-content: center; align-items: center;">
+                            <img src="{{ testimonial.logo }}"  height="80px" class="img-fluid rounded-start" alt="{{ testimonial.company }} logo">
+                        </div>
+                        <div class="col-lg-8 ps-0 ps-md-5">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <div class="icon-circle-primary">
+                                        <i class="bi bi-quote text-primary fs-3"></i>
+                                    </div>
+                                </div>
+                                <p class="card-text">
+                                    {{ testimonial.quote }}
+                                </p>
+                                <p class="card-text text-black-50">{{ testimonial.name }} </br>
+                                    <small>{{ testimonial.position }}, {{ testimonial.company }}</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div>
